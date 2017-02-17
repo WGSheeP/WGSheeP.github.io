@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#canvas{
+				background: url(1422.jpg);
+				display: block;
+				margin: 0 auto;
+				/*background: orangered;*/
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="1000" height="600"></canvas>
+		<script type="text/javascript">
+			function sun (pro) {
+				this.canvas=pro.canvas;
+				this.cxt=this.canvas.getContext('2d');
+				this.W=this.canvas.width;
+				this.H=this.canvas.height;
+				this.R=this.W/5;
+				this.r=this.R/4;
+				return this;
+			}
+			//初始化数据
+			sun.prototype.init=function  () {
+				var _this=this;
+				var i=0;
+				
+				setInterval(function  () {
+					i++;	
+
+					_this.cxt.clearRect(0,0,_this.W,_this.H);
+					_this.drawSun();
+					_this.drawEarth(i);
+					
+				},100);
+
+
+			}
+			//画太阳
+			sun.prototype.drawSun=function  () {
+//				this.cxt.translate(0,0);				
+				this.cxt.save();
+				this.cxt.translate(this.W/2-60,this.H/2-60);				
+				this.cxt.lineWidth=2;
+				this.cxt.fillStyle="orangered";
+				this.cxt.beginPath();
+				this.cxt.arc(0,0,this.R/6,0,Math.PI*2);
+				this.cxt.fill();
+				this.cxt.stroke();
+//				this.cxt.restore();
+				
+				
+				
+				return this;
+			}
+			//画地球
+			sun.prototype.drawEarth=function  (i) {
+//				alert(1)
+//				this.cxt.save();	
+//				this.cxt.translate(this.W/2,this.H/2);	
+//				this.cxt.restore();
+				this.cxt.lineWidth=1;
+				this.cxt.fillStyle="#78B1E8";				
+				this.cxt.beginPath();
+				var rad=Math.PI*2/100*i;
+				this.cxt.arc(this.R*Math.cos(rad),this.R*Math.sin(rad),this.r/5,0,Math.PI*2);
+				this.cxt.fill();
+//				this.cxt.restore();				
+//				this.cxt.save();
+				
+				this.cxt.translate(this.R*Math.cos(rad),this.R*Math.sin(rad));				
+				this.cxt.lineWidth=1;
+				this.cxt.fillStyle="yellow";				
+				this.cxt.beginPath();	
+				var rad2=Math.PI*2/100*i*5;				
+				this.cxt.arc(this.r/2*Math.cos(rad2),this.r/2*Math.sin(rad2),this.r/10,0,Math.PI*2);
+				this.cxt.fill();
+				this.cxt.stroke();
+				this.cxt.restore();									
+				return this;
+				
+			}
+			
+				
+				
+		
+			var cc=new sun({
+				canvas:document.getElementById("canvas")
+			})
+			cc.init();
+		</script>
+	</body>
+</html>
