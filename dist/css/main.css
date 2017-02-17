@@ -189,7 +189,7 @@ body {
     float: right;
     margin: 0 22px;
 }
-.naV .nav-a a {
+#nav-a a {
 	position:relative;
 	float:left;
 	width: 40px;
@@ -200,21 +200,21 @@ body {
 	-webkit-transform-origin: center center -10px;
 }
 
-.naV .nav-a span {
+#nav-a span {
 	float:left;
 	width: 60px;
 	text-align: center;
 	-webkit-backface-visibility: hidden;
 }
 
-.naV .nav-a span:nth-of-type(2) {
+#nav-a span:nth-of-type(2) {
 	position: absolute;
 	left: 0;
 	top: -20px;
 	-webkit-transform-origin: bottom;
 	-webkit-transform: rotateX(90deg);
 }
-.naV .nav-a a:hover{
+#nav-a a:hover{
 	-webkit-transform:rotateX(-90deg);
 }
 .title,.titleEng {
