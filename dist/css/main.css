@@ -309,7 +309,7 @@ body {
     animation:bgR 20s linear 0s infinite alternate both;
 }
 .section1 .contain {
-	display: block !important;
+	display: block;
 }
 
 @media screen and (max-width: 680px) {
