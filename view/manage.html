@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Web桌面</title>
+		<!--<link rel="stylesheet" href="../dist/css/bootstrap-theme.css">-->
+		<!--<link rel="stylesheet" href="../dist/css/bootstrap.css">-->
+		<!--<link rel="stylesheet" href="../dist/css/order.css" type="text/css">-->		
+		<!--<script type="text/javascript" src="../dist/js/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="../dist/js/bootstrap.js"></script>-->
+		<!--<script type="text/javascript" src="../src/js/Data.js"></script>-->
+		<!--<script type="text/javascript" src="../dist/js/template.js"></script>-->
+		<script type="text/javascript" src="../dist/js/manage.js"></script>
+	</head>
+
+	<body>
+
+		<div class="manage-body">
+
+				<div class="left-nav">
+
+					<div class="list-group">
+						<a href="javascript:;" class="list-group-item active">
+							当前所选餐台
+						</a>
+						<ul class="list-group currentList">
+							<li  class="list-group-item"><span>餐台状态：</span><span></span></li>
+							<li  class="list-group-item"><span>最低消费：</span><span></span></li>
+							<li  class="list-group-item"><span>进店时间：</span><span></span></li>
+							<li  class="list-group-item"><span>已用时间：</span><span></span></li>
+							<li  class="list-group-item"><span>服务员：</span><span></span></li>
+							<li  class="list-group-item"><span>换台情况：</span><span></span></li>
+							<li  class="list-group-item"><span>开台备注：</span><span></span></li>	
+						</ul>
+						<script type="text/html" id="currentListTemplate">
+							
+							{{if current.deskStatus}}
+							<li  class="list-group-item"><span>餐台状态：</span><span>占用</span></li>
+							{{else}}
+							<li  class="list-group-item"><span>餐台状态：</span><span>可供</span></li>
+							
+							{{/if}}
+							<li  class="list-group-item"><span>最低消费：</span><span>0</span></li>
+							<li  class="list-group-item"><span>进店时间：</span><span>{{current.currentDate}}</span></li>
+							<li  class="list-group-item"><span>已用时间：</span><span>{{current.durationTime}}</span></li>
+							<li  class="list-group-item"><span>服务员：</span><span>{{current.manager}}</span></li>
+							<li  class="list-group-item"><span>换台情况：</span><span></span></li>
+							<li  class="list-group-item"><span>开台备注：</span><span></span></li>							
+						</script>
+					</div>
+					<div class="list-group">
+						<a href="javascript:;" class="list-group-item active">
+							餐台总状态
+						</a>
+						<ul class="list-group allList">
+
+						</ul>
+						<script type="text/html" id="allListTemplate">
+						
+							<li href="#" class="list-group-item"><span>餐台总数：</span><span>{{allData.length}}</span></li>
+							<li href="#" class="list-group-item"><span>当前占用：</span><span>{{usedDesk.length}}</span></li>
+							<li href="#" class="list-group-item"><span>当前可供：</span><span>{{allData.length-usedDesk.length}}</span></li>
+							<li href="#" class="list-group-item"><span>当前预定：</span><span>0</span></li>
+							<li href="#" class="list-group-item"><span>当前停用：</span><span>0</span></li>
+							<li href="#" class="list-group-item"><span>上座率：</span><span>{{(usedDesk.length/allData.length)*100+'%'}}</span></li>							
+						</script>
+					</div>
+
+				</div>
+				<div class="desk">
+					<div class="desk-massage">
+						<div class="deskTab">
+							<ul class="nav nav-pills" role="tablist">
+								<li role="presentation" class="active">
+									<a href="javascript:;">所有餐桌</a>
+								</li>
+							</ul>
+						</div>
+						<div class="desk-list">
+
+						</div>
+						<script type="text/html" id="desk-listTemplate">
+							<ul>
+								{{each desk as value index}}
+								<li>
+
+									<h5>可供</h5>
+									<span>{{value.deskName}}</span>
+								</li>
+
+								{{/each}}
+							</ul>
+						</script>
+					</div>
+					<div class="detial">
+						<div class="panel panel-default">
+							<div class="panel-heading ">
+								详细信息
+							</div>
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>菜品名称</th>
+										<th>单价</th>
+										<th>数量</th>
+										<th>金额</th>
+										<th>时间</th>
+										<th>操作员</th>
+									</tr>
+								</thead>
+								<tbody id="detailTable">
+
+								</tbody>
+								<script type="text/html" id="detailTemplate">									
+									{{each current.ordering as value index}}
+									<tr>
+
+										<td>{{value.dishName}}</td>
+										<td>{{value.price}}</td>
+										<td>{{1}}</td>
+										<td>{{1}}</td>
+										<td>{{current.currentDate}}</td>
+										<td>{{current.manager}}</td>
+
+									</tr>									
+									{{/each}}
+								</script>
+							</table>
+
+						</div>
+
+					</div>
+				</div>
+
+		</div>
+	</body>
+
+</html>

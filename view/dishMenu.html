@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" >
+    <title>Title</title>
+    <script type="text/javascript">
+    	(function  () {
+    		var html = document.documentElement;
+    		html.style.fontSize=html.clientWidth/16 +"px";
+    		console.log(html.clientWidth)
+    		document.addEventListener('touchstart',function  (e) {
+    			e.preventDefault();
+    		})
+    	})();
+    </script>
+    <link rel="stylesheet" href="../dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../dist/css/dishMenu.css">
+    <script type="text/javascript" src="../dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/vue.min.js"></script>
+    <script  src="../dist/js/template.js"></script>    
+    <script type="text/javascript" src="../dist/js/Data.js"></script>
+    <script type="text/javascript" src="../dist/js/mobileTouch.js"></script>
+    
+</head>
+<body>
+	<div class="panel panel-default">
+	  <div class="panel-heading">  	
+	    <h4 class="panel-title">欢迎光临</h4>
+	  </div>
+	  <!--<div class="panel-body">-->
+		<div class="dishMenu-left-nav">
+			
+			<ul class="list-group dish-menu-list">
+				<!--这一块代码可以动态渲染-->
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>冷菜</a></li>
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>炒菜</a></li>
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>烧菜</a></li>
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>清蒸</a></li>
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>铁板</a></li>
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>锅类</a></li>
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>汤类</a></li>
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>主食</a></li>
+				<li class="list-group-item"><a href="javascript:;"><img src=""/>酒类</a></li>
+				<li class="list-group-item"><a href="javascript:;">我的菜单</a></li>
+
+			</ul>
+		</div>
+		<div class="dishMenu-body">
+			<nav class="navbar navbar-default" role="navigation">
+			     <form class="navbar-form navbar-left" role="search">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="搜索">
+			        </div>
+			        <button type="submit" class="btn btn-default">搜索</button>
+			      </form>
+			</nav>
+			<ul class="dishMenu-body-list">
+				<!--开始渲染-->
+				<!--<li class="list-group-item">
+					<a href="javascript:;"><img src="../images/blog.gif"/></a>
+					<h4>鱼香肉丝</h4>
+					<h5>猪肉、甜口</h5>
+					<span>￥30</span>
+					<ul class="click-btn">
+			    		<li><a href="#">详情</a></li>
+			    		<li><a href="#">点菜</a></li>
+			  		</ul>
+				</li>-->
+				<!--渲染结束-->
+				<!--这一块代码可以动态渲染-->
+			</ul>
+			<script type="text/html" id="dishMenu-body-listTemplate">
+				{{each dish as value index}}
+					<li class="list-group-item">
+						<a href="javascript:;"><img src="../images/blog.gif"/></a>
+						<h5>{{value.name}}</h5>
+						<h6>{{value.introduce}}</h6>
+						<span>{{value.price}}</span>
+						<ul class="click-btn">
+				    		<li><a href="#">详情</a></li>
+				    		<li><a href="#">点菜</a></li>
+				  		</ul>
+					</li>
+				{{/each}}
+			</script>
+			<nav class="switch-nav ">
+			  <ul class="pager">
+			    <li><a href="#">上一页</a></li>
+			    <li><a href="#">下一页</a></li>
+			  </ul>
+			</nav>
+		</div>
+
+	  <!--</div>-->
+	</div>	
+</body>
+</html>

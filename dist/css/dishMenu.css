@@ -1,0 +1,171 @@
+.panel {
+  width: 16rem;
+  height: 28.4rem;
+}
+.panel-heading {
+  position: absolute;
+  width: 16rem;
+  height: 1.4rem;
+  padding: 0;
+}
+.panel-heading h4 {
+  width: 5rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.panel-body {
+  position: absolute;
+  width: 16rem;
+  height: 27rem;
+}
+.dishMenu-left-nav {
+  position: absolute;
+  width: 3.2rem;
+  height: 27rem;
+  top: 1.4rem;
+}
+.dish-menu-list {
+  width: 3.5rem;
+  height: 100%;
+}
+.dish-menu-list li {
+  width: 3.5rem;
+  height: 2.25rem;
+  padding: 0;
+}
+.dish-menu-list li a {
+  display: block;
+  width: 3.5rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  text-align: center;
+}
+.dishMenu-body {
+  position: absolute;
+  width: 12.8rem;
+  height: 27rem;
+  top: 1.4rem;
+  left: 3.5rem;
+}
+.navbar-default,
+.container-fluid,
+.navbar-collapse {
+  width: 12.8rem;
+  height: 2rem;
+  margin-bottom: 0;
+  min-height: 2rem;
+}
+.navbar-left {
+  width: 12.8rem;
+  height: 1.5rem;
+  min-height: 1.5rem;
+  padding: 0 1rem;
+  border: none;
+}
+.form-group {
+  display: inline-block;
+  width: 6.4rem;
+  height: 1.5rem;
+  margin-bottom: 0;
+  min-height: 1.5rem;
+  padding: 0;
+}
+.form-control,
+.btn-default {
+  height: 1.5rem;
+  min-height: 1.5rem;
+}
+.panel-title {
+  width: 2rem;
+  margin: 0.25rem auto;
+}
+ul {
+  list-style-type: none;
+}
+.navbar-right {
+  width: 1.5rem;
+  height: 1rem;
+  line-height: 1rem;
+}
+.navbar-right li span {
+  margin-right: 0.6rem;
+}
+.dishMenu-body-list {
+  width: 12.8rem;
+  height: 22.5rem;
+  padding: 0;
+  overflow: hidden;
+}
+.dishMenu-body-list li {
+  width: 24rem;
+  height: 2.5rem;
+  border-radius: 0.15rem;
+  border: 0.05rem solid gainsboro;
+}
+.dishMenu-body-list li a {
+  position: absolute;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 0.15rem;
+  overflow: hidden;
+}
+.dishMenu-body-list li a img {
+  width: 2rem;
+  height: 2rem;
+}
+.dishMenu-body-list li h5 {
+  position: absolute;
+  margin-top: 0.35rem;
+  width: 5rem;
+  height: 1rem;
+  line-height: 1rem;
+  left: 4rem;
+  top: 0;
+}
+.dishMenu-body-list li h6 {
+  position: absolute;
+  margin-top: 1.3rem;
+  width: 5rem;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  left: 4rem;
+  top: 0;
+}
+.dishMenu-body-list span {
+  position: absolute;
+  margin-top: 0.25rem;
+  width: 2.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  top: 0;
+  text-align: center;
+  left: 7.5rem;
+}
+.click-btn {
+  position: absolute;
+  width: 5rem;
+  height: 2rem;
+  line-height: 2rem;
+  left: 7.5rem;
+  top: 1rem;
+}
+.click-btn li {
+  width: 2rem;
+  height: 1rem;
+  line-height: 1rem;
+  display: inline-block;
+}
+.click-btn li a {
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.switch-nav {
+  height: 1.75rem;
+  width: 12.8rem;
+}

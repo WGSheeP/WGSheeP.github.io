@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web桌面</title>
+    <link rel="stylesheet" href="../dist/css/statement.css">
+    <script src="../dist/js/echarts.js"></script>    
+
+
+</head>
+<body>
+    <!--基础资料页面-->
+    <div class="statement-data-box">
+        <div class="statement-left-nav" >
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li role="presentation" class="active"><a href="javascript:;">当日菜品销量统计</a></li>
+			  <li role="presentation"><a href="javascript:;">营业额统计</a></li>
+			  <li role="presentation"><a href="javascript:;">时段流量统计</a></li>
+			</ul>        	
+        </div>
+
+        <canvas id="canvasDish" width="650" height="450" style="display:block;"></canvas>       
+        <canvas id="canvasPro" width="650" height="450"></canvas>
+        <canvas id="canvasPeople" width="750" height="450"></canvas>	
+	</div>
+	<script src="../src/js/people.js"></script>
+	<script src="../src/js/statementPro.js"></script>
+	<script src="../src/js/statementDish.js"></script>
+	<script type="text/javascript">
+$('.statement-data-box li ').each(function(index, value) {
+
+	$(this).click(function() {
+		$('.statement-left-nav li ').each(function(index1, value1) {
+			$(value1).attr('class', '');
+		})
+		$(this).attr('class', 'active');
+		$('canvas').each(function(index, value) {
+				$(value).attr('style', 'display: none;')
+			})
+
+		if(index == 0) {
+			$('canvas').eq(0).attr('style', 'display: block;')
+		} else if(index == 1) {
+			$('canvas').eq(1).attr('style', 'display: block;')
+		} else if(index == 2) {
+			$('canvas').eq(2).attr('style', 'display: block;')
+		}
+
+
+	})
+})		
+	</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web桌面</title>
+    <link rel="stylesheet" href="./dist/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.css">
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.js"></script>	
+	<script src="./dist/js/html5_3d_animation.js"></script>	
+	<script src="./dist/js/indexPage.js"></script>
+
+</head>
+<body>
+<div class="index-container">
+    <!--桌面应用-->
+	<div class="app order">
+		<span><i></i><em>食为天点餐</em></span>
+	</div>
+	<div class="app music">
+		<span><i></i><em>QQ音乐</em></span>
+	</div>
+	<div class="app blog">
+		<span><i></i><em>MyBlog</em></span>
+	</div>
+    <!--home列表框-->
+    <div class="home-box">
+        <ul class="list"></ul>
+    </div>
+
+    <!--/*个人信息介绍*/-->
+    <div class="introduction">
+    	<ul>
+    		<li>1111</li>
+    		<li>2222</li>
+    		<li>3333</li>
+    		<li>4444</li>
+    	</ul>
+    	
+    </div>
+    <!--点餐系统平台登录-->
+    <div class="order-login">
+
+    </div>
+	<!--右键菜单-->
+	<ul id="rightMenu">
+		<li>查看
+			<ul class="watch">
+				<li>标准图标</li>
+				<li>小图标</li>
+				<li>自动排列图标</li>
+			</ul>
+		</li>
+		<li>排列方式
+			<ul class="arrange">
+				<li>正序</li>
+				<li>反序</li>
+			</ul>
+		</li>
+		<li>刷新</li>
+		<li>新建</li>
+		<li>删除</li>
+		<li>重命名</li>
+	</ul>
+    <div class=""></div>
+    <!--流星盒子-->
+    <div id="star">
+    	<canvas id="html5-star"></canvas>
+    </div>
+
+	<div class="pop-up-box order-box">
+		<div class="order-header-nav pop-nav">
+			<p class="order-box-title">食为天餐饮管理系统</p>
+			<a href="javascript:;" class="quit"><i></i></a>			
+			<a href="javascript:;" class="max"><i class="org"></i><i class="org-max"></i></a>
+			<a href="javascript:;" class="min"><i></i></a>
+		</div>
+		<iframe src="order/indexManage.html" id="order" class="pop-up-box-iframe"></iframe>
+	</div>
+	<div class="pop-up-box blog-box">
+		<div class="blog-header-nav pop-nav">
+			<p class="blog-box-title">blog登录</p>
+			<a href="javascript:;" class="quit"><i></i></a>			
+			<a href="javascript:;" class="max"><i class="org"></i><i class="org-max"></i></a>
+			<a href="javascript:;" class="min"><i></i></a>
+		</div>		
+		<iframe src="blog/login.htm" id="blog" class="pop-up-box-iframe"></iframe>
+	</div>
+	<div class="pop-up-box music-box">
+		<div class="music-header-nav pop-nav">
+			<p class="music-box-title">QQ音乐</p>
+			<a href="javascript:;" class="quit"><i></i></a>			
+			<a href="javascript:;" class="max"><i class="org"></i><i class="org-max"></i></a>
+			<a href="javascript:;" class="min"><i></i></a>
+		</div>		
+		<iframe src="music/music.html" id="music" class="pop-up-box-iframe"></iframe>
+	</div>
+	
+	
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  width: 100%;
+  height: 2.725rem;
+  background: #3190E8;
+  left: 0;
+  top: 0;
+}
+footer {
+  width: 100%;
+  height: 2.175rem;
+  background: #F7F7F7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.wrap {
+  position: absolute;
+  bottom: 2.175rem;
+  top: 2.725rem;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.input-group {
+  position: absolute;
+  width: 14.7rem;
+  height: 1.6rem;
+  top: 0.575rem;
+  left: 0.65rem;
+}
+header img {
+  width: 2.7rem;
+  height: 2.175rem;
+  line-height: 2.175rem;
+  margin: 0.125rem 0;
+}
+.scroll {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.tab-list {
+  height: 7.75rem;
+}
+.tab-box-ul {
+  position: absolute;
+  list-style-type: none;
+}
+.tab-box-ul li {
+  float: left;
+}
+.tab-list ul img {
+  height: 7.75rem;
+}
+.tab-dot {
+  width: 1.5rem;
+  height: 0.25rem;
+  margin-left: 7.25rem;
+}
+.tab-dot a {
+  display: block;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: gainsboro;
+  border-radius: 50%;
+}
+.tab-dot a:nth-of-type(1) {
+  float: left;
+}
+.tab-dot a:nth-of-type(2) {
+  float: right;
+}
+.footer-btn li {
+  list-style-type: none;
+  float: left;
+  height: 2.175rem;
+  width: 4rem;
+  text-align: center;
+  overflow: hidden;
+}
+.footer-btn img {
+  width: 2.725rem;
+  height: 2.175rem;
+  line-height: 2.175rem;
+}
+.footer-btn .inner {
+  display: none;
+}
+.tab-dot .active {
+  background: red;
+}
+.ad-title {
+  width: 100%;
+  height: 4.775rem;
+}
+.ad-title img {
+  width: 100%;
+  height: 4.775rem;
+}
+.tab-box-list {
+  width: 100%;
+}
+.tab-box-list img {
+  width: 100%;
+}
+.boxBottom {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  opacity: 0;
+}
+.discover-title img {
+  width: 100% ;
+  height: 7.375rem;
+}
+.discover-tab img {
+  width: 100% ;
+  height: 4.625rem;
+}
+.disNone {
+  display: block;
+}
+.Img {
+  position: absolute;
+  display: none;
+}

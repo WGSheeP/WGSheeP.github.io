@@ -1,0 +1,21 @@
+.statement-data-box {
+  width: 100%;
+  height: 100%;
+}
+.statement-left-nav {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+#canvasDish,
+#canvasPeople,
+#canvasPro {
+  position: absolute;
+  top: 5px;
+  left: 30%;
+  bottom: 5%;
+}
+canvas {
+  display: none;
+}

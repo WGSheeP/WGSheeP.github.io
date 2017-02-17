@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Web桌面</title>
+		<script type="text/javascript" src="../dist/js/cash.js"></script>
+	</head>
+
+	<body>
+
+		<div class="cash-body">
+			<div class="cash-left-nav">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">收银查询</h3>
+					</div>
+					<ul class="cash-massage-list">
+						<li><label>开台单号:</label><input type="text" value=""></li>
+						<li><label>开台餐桌:</label><input type="text" id="deskNum-data" value=""></li>
+						<li><label>开台时间:</label><input type="text" value=""></li>
+						<li><label>开台人:</label><input type="text" value=""></li>
+					</ul>
+					<button type="button" id="search-btn" class="btn btn-primary">查询信息</button>
+					<script type="text/html" id="cashOrderTemplate">
+
+						<li><label>开台单号:</label><input type="text" value="{{orderList[0].orderID}}"></li>
+						<li><label>开台餐桌:</label><input type="text" id="deskNum-data" value="{{ orderList[0].deskNum}}"></li>
+						<li><label>开台时间:</label><input type="text" value="{{orderList[0].currentDate}}"></li>
+						<li><label>开台人:</label><input type="text" value="{{orderList[0].manager}}"></li>
+
+					</script>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>行</th>
+								<th>菜品名称</th>
+								<th>数量</th>
+								<th>价格</th>
+								<th>加价</th>
+								<th>实际金额</th>
+							</tr>
+						</thead>
+						<tbody id="cashData">
+
+						</tbody>
+						<script type="text/html" id="cashDataTemplate">
+							{{each orderList[0].ordering as value index}}
+							<tr class="add-member">
+								<td>{{index+1}}</td>
+								<td>{{value.dishName}}</td>
+								<td>1</td>
+								<td>{{value.price}}</td>
+								<td>0.00</td>
+								<td>{{value.price}}</td>
+							</tr>
+							{{/each}}
+						</script>
+					</table>
+
+				</div>
+			</div>
+			<div class="cash-desk">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">收银台</h3>
+					</div>
+					<ul class="cash-desk-list">
+						<li><label>消费:</label><input type="text" value=""></li>
+						<li><label>服务费:</label><input type="text" value="0"></li>
+						<li><label>应收:</label><input type="text" class="payable" value=""></li>
+						<li><label>实收:</label><input type="text" class="chargeCash" value=""></li>
+						<li><label>余额:</label><input type="text" value=""></li>
+					</ul>
+					<script type="text/html" id="cashDataStatsTemplate">
+						<li><label>消费:</label><input type="text" value="{{total[0]}}"></li>
+						<li><label>服务费:</label><input type="text" value="0"></li>
+						<li><label>应收:</label><input type="text" class="payable" value="{{total[0]}}"></li>
+						<li><label>实收:</label><input type="text" class="chargeCash" value=""></li>
+						<li><label>余额:</label><input type="text" value=""></li>
+					</script>
+					<div class="check-out">
+						<span>
+							<label>现金:</label><input type="text" id="chargeCash">	
+						</span>
+						<span>
+							<label>找零:</label><input type="text" id="change">							
+						</span>
+
+					</div>
+					<table class="account">
+						<tr>
+							<td><input type="button" value="7"></td>
+							<td><input type="button" value="8"></td>
+							<td><input type="button" value="9"></td>
+							<td><input type="button" value="10"></td>
+							<td><input type="button" value="退格"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="4"></td>
+							<td><input type="button" value="5"></td>
+							<td><input type="button" value="6"></td>
+							<td><input type="button" value="20"></td>
+							<td><input type="button" value="清除"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="1"></td>
+							<td><input type="button" value="2"></td>
+							<td><input type="button" value="3"></td>
+							<td><input type="button" value="50"></td>
+							<td><input type="button" value="确定" id="cash-btn"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="0"></td>
+							<td><input type="button" value="00"></td>
+							<td><input type="button" value="."></td>
+							<td><input type="button" value="100"></td>
+							<td><input type="button" value="现金付款"></td>
+						</tr>
+						<!--<tr>
+							<td><input type="button" value="会员付款"></td>
+
+
+						</tr>-->
+					</table>
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+
+</html>

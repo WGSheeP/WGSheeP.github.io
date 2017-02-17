@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<meta charset="UTF-8">
+<title>Document</title>
+<script type="text/javascript">
+(function(){
+	var html = document.documentElement;
+	html.style.fontSize = html.clientWidth/16+"px";
+	
+})();
+
+</script>
+<script type="text/javascript" src="../dist/js/m.touch.js"></script>
+<style type="text/css">
+body {
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header {
+	height: 40px;
+	background: #000;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #fff;
+}
+.wrap {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 40px;
+	bottom: 0;
+	overflow: hidden;
+}
+#imgs {
+	overflow: hidden;
+	min-height: 100%;
+}
+#imgs li {
+	float: left;
+	width: 7rem;
+	height: 7rem;
+	margin: .5rem;
+	background: url(../pics/loadingImg.gif) no-repeat;
+}
+#imgs img {
+	width: 7rem;
+	height: 7rem;
+	display: block;
+	opacity: 0;
+	transition: 1s opacity;
+}
+.scroll {
+	position: relative;
+}
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -40px;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	opacity: 0;
+}
+</style>
+<script type="text/javascript">
+var data = [];
+for(var i = 0; i < 20; i++){
+	data.push("../pics/"+(i%16+1)+".jpg");
+}
+window.onload = function() {
+	var wrap = document.querySelector('.wrap');
+	var imgs = document.querySelector('#imgs');
+	var lis = imgs.children;
+	var start = 0;
+	var length = 8;
+	var wrapRect = wrap.getBoundingClientRect();
+	var wrapTop = wrapRect.top;
+	var wrapBottom = wrapRect.top + wrapRect.height;
+	var footer = document.querySelector('footer'); 
+	var isEnd = false;
+	var wrapScroll = new MScroll({
+		element: wrap,
+		showBar:true
+	});
+	//console.log(wrapScroll.minTranslate);
+	wrapScroll.onscrollstart = function(){
+		if(wrapScroll.iScroll.y <=  wrapScroll.minTranslate.y){
+			//console.log("从底部开始滑屏");
+			footer.style.opacity = 1;
+			isEnd = true;
+		}
+	};
+	wrapScroll.onscrollend = function(){
+		if(isEnd && this.iScroll.y <  this.minTranslate.y){
+			console.log("加载更多");
+			clearTimeout(this.timer); //在 onscrollend中 清除定时器，可以阻止缓冲或者回弹动画
+			start += length;
+			createLi();
+			isEnd = false;
+		}
+	};
+	wrapScroll.onscroll = function(){
+		showImg();
+	};
+	//onscrollover 滚动停止
+	wrapScroll.onscrollover = function(){
+		showImg();
+	};
+	createLi();
+	function createLi(){
+		if(start >= data.length){
+			console.log("该结束");
+			footer.innerHTML = "没有更对图片了";
+			setTimeout(function(){
+				wrapScroll.iScroll.y =  wrapScroll.minTranslate.y;
+				wrapScroll.move();
+				footer.style.opacity = 0;
+				wrapScroll.onscrollstart = null;
+				wrapScroll.onscrollend = null;
+				wrapScroll.onscroll = null;
+				wrapScroll.onscrollover = null;
+				/*
+					修改了iScroll之后，同步元素的位置:
+						1. setTranslate(); 无动画
+						2. move(); 有动画
+				*/
+			},1000);
+			return;
+		}
+		var end = start + length;
+		end = end > data.length?data.length:end;
+		for(var i = start; i < end; i++){
+			var li = document.createElement("li");
+			li.dataset.img = data[i];
+			li.dataset.iscreate = "false";
+			imgs.appendChild(li);
+		}
+		showImg();
+		wrapScroll.reSize(); //修改了元素内容之后，记得重置最大移动距离
+		wrapScroll.scrollYBar.style.opacity = 0;
+		footer.style.opacity = 0;
+	}
+	function showImg(){
+		for(var i = 0; i < lis.length; i++){
+			var rect = lis[i].getBoundingClientRect();
+			var rectTop = rect.top;
+			var rectBottom = rect.top + rect.height;
+			//console.log(typeof lis[i].dataset.iscreate);
+			if(rectBottom > wrapTop 
+			  	&& rectTop < wrapBottom
+			  	&& lis[i].dataset.iscreate === "false"){
+				lis[i].dataset.iscreate = "true";
+				ceateImg(lis[i]);
+
+			} 
+		}
+	}
+	function ceateImg(li){
+		var img = new Image();
+		img.src = li.dataset.img;
+		img.onload = function(){
+			li.appendChild(img);
+			/* 元素在页面上没有渲染完，transition不起作用 */
+			setTimeout(function(){
+				img.style.opacity = 1;
+			},40);
+		};
+	}
+};
+</script>
+</head>
+<body>
+<header>食为天点餐</header>
+<section class="wrap">
+	<section class="scroll">
+		<ul id="imgs">
+		</ul>
+		<footer>加载更多</footer>
+	</section>
+</section>
+</body>
+</html>

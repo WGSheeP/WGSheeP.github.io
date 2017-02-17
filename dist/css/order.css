@@ -1,0 +1,297 @@
+html,
+body {
+  width: 100%;
+}
+.panel-body {
+  width: 370px;
+  height: 300px;
+  border: 1px solid gainsboro;
+  margin: 200px  auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.register-box ul li {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  font-size: 13px;
+}
+.register-box ul li span {
+  text-align: left;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 5px;
+}
+.register-box ul li input {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+}
+.register-box ul li button {
+  display: inline-block;
+  width: 90px;
+  height: 35px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.login-box {
+  display: block;
+  width: 370px;
+  height: 300px;
+  border: 1px solid gainsboro;
+  margin: 200px  auto;
+}
+.login-box ul li {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  font-size: 13px;
+}
+.login-box ul li span {
+  text-align: left;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 5px;
+}
+.login-box ul li input {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+}
+.login-box ul li button {
+  display: inline-block;
+  width: 90px;
+  height: 35px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+body {
+  margin-top: 30px;
+}
+.manage {
+  width: auto;
+  height: 600px;
+}
+.manage-tools {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 5%;
+}
+#container-box {
+  position: absolute;
+  width: 100%;
+  height: 82% ;
+  top: 15%;
+}
+.manage-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.left-nav {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  left: 0;
+}
+.left-nav .list-group {
+  height: 50%;
+}
+.user-member {
+  width: 100%;
+  height: auto;
+}
+.user-member li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #275D9B;
+  margin-bottom: 3px;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+}
+.desk {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  left: 20%;
+}
+.desk-massage {
+  width: 100%;
+  height: 65%;
+}
+.desk-list {
+  width: 100%;
+  height: 85%;
+}
+.desk-list ul li {
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+  background: #5bc0de;
+  float: left;
+  margin: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+.desk-list ul li h5 {
+  margin: 0;
+  padding: 0;
+  background: #5cb85c;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  color: white;
+}
+.desk-list ul li span {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: rebeccapurple;
+}
+.desk-list ul {
+  width: 100%;
+  height: 100%;
+}
+.detial {
+  width: 100%;
+  height: 35%;
+}
+.show,
+.refresh {
+  width: 100px;
+  height: 20px;
+  float: left;
+  line-height: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+.table td,
+.table th {
+  text-align: center;
+}
+.cash-body {
+  position: absolute;
+  width: 100%;
+  height: 100% ;
+}
+.cash-left-nav {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  left: 0;
+  padding: 3px;
+}
+.cash-massage-list {
+  width: 100%;
+  height: auto;
+}
+.cash-massage-list li {
+  float: left;
+}
+.cash-desk {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  left: 55%;
+}
+.cash-massage-list label {
+  display: inline-block;
+  width: 85px;
+  text-align: right;
+}
+.cash-massage-list input {
+  display: inline-block;
+  outline: none;
+  border: none;
+}
+.cash-desk-list {
+  width: 100%;
+  height: 100px;
+}
+.cash-desk-list li {
+  float: left;
+  width: 50%;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 5px;
+}
+.cash-desk-list label {
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+}
+.cash-desk-list input {
+  display: inline-block;
+  width: 120px;
+  outline: none;
+  border: none;
+}
+.check-out {
+  width: 100%;
+  height: 30px;
+}
+.check-out span {
+  width: auto;
+  height: 30px;
+}
+.check-out label {
+  width: 50px;
+  height: 30px;
+  text-align: right;
+}
+.check-out input {
+  width: 100px;
+  height: 30px;
+}
+.account {
+  margin-top: 10px;
+  width: 100%;
+  height: 75%;
+  border-collapse: collapse;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.account tr {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+.account td {
+  display: inline-block;
+  height: 40px;
+  width: 19%;
+}
+.account input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  background: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+}
+.add-btn {
+  display: block;
+  width: 60px;
+}
+#search-btn {
+  margin-left: 10px;
+}
