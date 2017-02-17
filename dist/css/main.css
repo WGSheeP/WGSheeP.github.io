@@ -164,7 +164,7 @@ body {
 .logo:hover {
     transform:rotate(5deg) scale(1.05);
 }
-.naV h1 a {
+.naV a {
     line-height: 70px;
     transition:all .4s ease;
     color: #333;
@@ -193,7 +193,6 @@ body {
 	position:relative;
 	float:left;
 	width: 40px;
-	font: 14px/20px "宋体";
 	text-decoration: none;
 	-webkit-transform-style: preserve-3d;
 	transition: .5s;
