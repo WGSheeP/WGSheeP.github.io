@@ -195,7 +195,15 @@ ul {
 .pop-nav .org-max {
   display: none;
 }
-
+.pop-nav .min i {
+  background-image: url(../../images/min.png);
+}
+.pop-nav .max i {
+  background-image: url(../../images/org.png);
+}
+.pop-nav .quit i {
+  background-image: url(../../images/无标题_r2_c6.png);
+}
 .order-box-title {
   height: 100%;
   line-height: 30px;
