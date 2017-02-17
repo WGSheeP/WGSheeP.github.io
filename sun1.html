@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*#canvas{
+				background: url(1422.jpg);
+			}*/
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="1780" height="1000"></canvas>
+		<script type="text/javascript">
+			function sun (pro) {
+				this.canvas=pro.canvas;
+				this.cxt=this.canvas.getContext('2d');
+				this.W=this.canvas.width;
+				this.H=this.canvas.height;
+				this.R=this.W/5;
+				this.r=this.R/4;
+				return this;
+			}
+			//初始化数据
+			sun.prototype.init=function  () {
+				var _this=this;
+				var i=0;
+				var j=0;
+				var num=0;
+				setInterval(function  () {
+					i++;
+					 _this.cxt.translate(this.W/2,this.H/2);					
+//					_this.cxt.clearRect(_this.R*Math.cos(Math.PI*2/50*i)+_this.r/4,_this.R*Math.sin(Math.PI*2/50*i)-_this.r/4,_this.r/2,_this.r/2);//这是清除矩形的，所有不能清除圆
+					_this.drawEarth(i);
+					num=i;
+					
+				},200);
+				setInterval(
+					function  () {
+						j++;
+				_this.cxt.translate(_this.R*Math.cos(Math.PI*2/50*num)+this.r/2*Math.cos(Math.PI*2/50*j),this.R*Math.sin(Math.PI*2/50*num)+this.r/2*Math.sin(Math.PI*2/50*j));				
+						
+						_this.drawMoon(num,j)
+					},100);
+
+			}
+			//画太阳
+			sun.prototype.drawSun=function  () {
+//				this.cxt.save();
+				this.cxt.translate(this.W/2,this.H/2);
+				this.cxt.lineWidth=2;
+				this.cxt.fillStyle="#FFFF00";
+				this.cxt.beginPath();
+				this.cxt.arc(0,0,this.R/6,0,Math.PI*2);
+				this.cxt.fill();
+				this.cxt.stroke();
+				
+				
+				return this;
+			}
+			//画地球
+			sun.prototype.drawEarth=function  (i) {
+//				alert(1)
+//				this.cxt.save();
+//				this.cxt.translate(this.W/2,this.H/2);	
+				this.cxt.lineWidth=1;
+				this.cxt.fillStyle="#78B1E8";				
+				this.cxt.beginPath();
+				var rad=Math.PI*2/50*i;
+				this.cxt.arc(this.R*Math.cos(rad),this.R*Math.sin(rad),this.r/4,0,Math.PI*2);
+				this.cxt.fill();
+				this.cxt.stroke();
+//				this.cxt.restore();	
+				
+				
+				return this;
+				
+			}
+			sun.prototype.drawMoon=function  (i,j) {
+				this.cxt.save();
+				var rad1=Math.PI*2/50*i;
+				this.cxt.translate(this.R*Math.cos(rad1),this.R*Math.sin(rad1));				
+				this.cxt.lineWidth=1;
+				this.cxt.fillStyle="red";
+				var rad2=Math.PI*2/50*j;				
+				this.cxt.beginPath();				
+				this.cxt.arc(this.r/6*Math.cos(rad2),this.r/6*Math.sin(rad2),this.r/10,0,Math.PI*2);
+				this.cxt.fill();
+				this.cxt.stroke();
+				this.cxt.restore();				
+				
+				return this;
+				
+			}			
+			var cc=new sun({
+				canvas:document.getElementById("canvas")
+			})
+			cc.drawSun().drawEarth(200).init();
+		</script>
+	</body>
+</html>
+
