@@ -198,7 +198,6 @@ body {
 }
 
 .nav-a span {
-	float: left;
 	width: 60px;
 	text-align: center;
 	-webkit-backface-visibility: hidden;
