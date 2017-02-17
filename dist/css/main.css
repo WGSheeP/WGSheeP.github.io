@@ -187,7 +187,6 @@ body {
 .naV li {
     display: inline;
     float: right;
-    overflow: hidden;
     margin: 0 22px;
 }
 #nav-a a {
