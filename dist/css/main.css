@@ -189,6 +189,33 @@ body {
     float: right;
     margin: 0 22px;
 }
+.nav-a a {
+	float: left;
+	position: relative;
+	font: 14px/20px "宋体";
+	text-decoration: none;
+	-webkit-transform-style: preserve-3d;
+	transition: .5s;
+	-webkit-transform-origin: center center -10px;
+}
+
+.nav-a span {
+	float: left;
+	width: 60px;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.nav-a span:nth-of-type(2) {
+	position: absolute;
+	left: 0;
+	top: -20px;
+	-webkit-transform-origin: bottom;
+	-webkit-transform: rotateX(90deg);
+}
+.nav-a a:hover{
+	-webkit-transform:rotateX(-90deg);
+}
 .title,.titleEng {
     -webkit-animation:dragTop .7s ease-in-out both;
     -moz-animation:dragTop .7s ease-in-out both;
