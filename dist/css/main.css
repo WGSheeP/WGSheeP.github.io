@@ -144,8 +144,8 @@ body {
 }
 .nav {
     z-index: 5;
-    position: fixed;
-    _position:absolute;
+    position: absolute;
+    /*_position:absolute;*/
     box-shadow: 0 2px 10px 0px #000;
     background: #fff;
     top: 0;
