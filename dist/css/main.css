@@ -192,11 +192,11 @@ body {
 #nav-a a {
 	position:relative;
 	float:left;
-	width: 40px;
+	width: 60px;
 	text-decoration: none;
 	-webkit-transform-style: preserve-3d;
 	transition: .5s;
-	-webkit-transform-origin: center center -10px;
+	-webkit-transform-origin: center center -35px;
 }
 
 #nav-a span {
@@ -209,7 +209,7 @@ body {
 #nav-a span:nth-of-type(2) {
 	position: absolute;
 	left: 0;
-	top: -20px;
+	top: -70px;
 	-webkit-transform-origin: bottom;
 	-webkit-transform: rotateX(90deg);
 }
