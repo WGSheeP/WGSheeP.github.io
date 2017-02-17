@@ -204,7 +204,8 @@ body {
 	float:left;
 	width: 60px;
 	text-align: center;
-	border: 2px solid black;	
+	border: 1px solid black;
+	border-radius: 5px;	
 	-webkit-backface-visibility: hidden;
 }
 
