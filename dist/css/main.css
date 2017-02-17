@@ -194,7 +194,6 @@ body {
 	float:left;
 	width: 60px;
 	text-decoration: none;
-	border: 2px solid black;
 	-webkit-transform-style: preserve-3d;
 	transition: .5s;
 	-webkit-transform-origin: center center -35px;
@@ -204,6 +203,7 @@ body {
 	float:left;
 	width: 60px;
 	text-align: center;
+	border: 2px solid black;	
 	-webkit-backface-visibility: hidden;
 }
 
