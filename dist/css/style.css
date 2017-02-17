@@ -3,7 +3,7 @@
   margin: 0;
 }
 body {
-  background: url("../../images/star.jpg");
+  background: url("../images/star.jpg");
   overflow: hidden;
 }
 .app {
