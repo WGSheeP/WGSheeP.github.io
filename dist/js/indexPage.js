@@ -1,4 +1,4 @@
-window.onload = function() {
+//window.onload = function() {
 	
 	var container=document.querySelector('.index-container');
 	container.style.width=window.innerWidth;
@@ -22,18 +22,7 @@ window.onload = function() {
 				winOperate ($('.order-box'));
 				drag(document.querySelector('.order-header-nav'), document.querySelector('.order-box'));				
 			}
-			if(index == 1) {
-				$('.music-box').attr('style', 'display: block;');
-				popBox($('.music-box'));
-				winOperate ($('.music-box'));	
-				drag(document.querySelector('.music-header-nav'), document.querySelector('.music-box'));				
-			}
-			if(index == 2) {
-				$('.blog-box').attr('style', 'display: block;');
-				popBox($('.blog-box'));
-				winOperate ($('.blog-box'));
-				drag(document.querySelector('.blog-header-nav'), document.querySelector('.blog-box'));				
-			}
+
 
 		})
 
@@ -151,4 +140,4 @@ window.onload = function() {
 		}, 3000)
 
 	}
-}
+//}
