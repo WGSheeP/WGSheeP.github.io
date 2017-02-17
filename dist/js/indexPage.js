@@ -3,14 +3,7 @@ window.onload = function() {
 	var container=document.querySelector('.index-container');
 	container.style.width=window.innerWidth;
 	container.style.height=window.innerHeight;
-//	$('#html5-star').html5_3d_animation({
-//		window_width:window.innerWidth,
-//      window_height:window.innerHeight,
-//      window_background: '#black',
-//      star_count: '1000',
-//      star_color: '#FBFFAF',
-//      star_depth: '100'
-//	})
+
 	$('.app').each(function(index) {
 		$(this).mouseover(function() {
 			$(this).attr('style', 'background: #ECF2F7; opacity: 0.8; border: 1px solid transparent; border-radius: 5px;')
