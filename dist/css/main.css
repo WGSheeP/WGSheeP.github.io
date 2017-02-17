@@ -188,6 +188,7 @@ body {
     display: inline;
     float: right;
     margin: 0 22px;
+	-webkit-transform-style: preserve-3d;    
 }
 #nav-a a {
 	position:relative;
