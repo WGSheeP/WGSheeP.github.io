@@ -17,7 +17,7 @@
 			$('.pop-up-box').attr('style','display: none;')
 			if(index == 0) {
 
-				$('.order-box').attr('style', 'display: block;top:70px');
+				$('.order-box').attr('style', 'display: block;');
 				popBox($('.order-box'));	
 				winOperate ($('.order-box'));
 				drag(document.querySelector('.order-header-nav'), document.querySelector('.order-box'));				
