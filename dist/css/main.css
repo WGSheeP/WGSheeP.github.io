@@ -190,7 +190,6 @@ body {
     margin: 0 22px;
 }
 .nav-a a {
-	position: relative;
 	font: 14px/20px "宋体";
 	text-decoration: none;
 	-webkit-transform-style: preserve-3d;
