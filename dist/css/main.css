@@ -176,7 +176,7 @@ body {
     line-height: 70px;
     float: left;
 }
-.naV span {
+.naV h1 span {
     position: absolute;
     left: 80px;
     top: 0;
@@ -190,6 +190,8 @@ body {
     margin: 0 22px;
 }
 .nav-a a {
+	float:left;
+	position:relative;
 	font: 14px/20px "宋体";
 	text-decoration: none;
 	-webkit-transform-style: preserve-3d;
@@ -198,6 +200,7 @@ body {
 }
 
 .nav-a span {
+	float:left;
 	width: 60px;
 	text-align: center;
 	-webkit-backface-visibility: hidden;
