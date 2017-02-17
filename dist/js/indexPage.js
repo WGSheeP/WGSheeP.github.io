@@ -36,7 +36,7 @@
 			opacity: 1,
 			bottom: '10px',
 			width: window.innerWidth * 0.9,
-			height: window.innerHeight * 0.9,
+			height: window.innerHeight * 0.9
 
 		}, 300)
 	}
