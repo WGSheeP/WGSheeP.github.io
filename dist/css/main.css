@@ -142,7 +142,7 @@ body {
 #next {
     right: 0
 }
-.nav {
+.naV {
     z-index: 5;
     position: fixed;
     _position:absolute;
@@ -164,27 +164,27 @@ body {
 .logo:hover {
     transform:rotate(5deg) scale(1.05);
 }
-.nav a {
+.naV a {
     line-height: 70px;
     transition:all .4s ease;
     color: #333;
 }
-.nav a:hover {
+.naV a:hover {
     text-shadow:1px 1px 3px #000;
 }
-.nav h1 {
+.naV h1 {
     line-height: 70px;
     float: left;
 }
-.nav span {
+.naV span {
     position: absolute;
     left: 80px;
     top: 0;
 }
-.nav h1 p {
+.naV h1 p {
     display: none;
 }
-.nav li {
+.naV li {
     display: inline;
     float: right;
     margin: 0 22px;
@@ -311,10 +311,10 @@ body {
 }
 
 @media screen and (max-width: 680px) {
-	.nav ul {
+	.naV ul {
 		display: none;
 	}
-	.nav span {
+	.naV span {
 		font-size: 22px;
 	}
 	.page1 p {
