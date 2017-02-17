@@ -1,8 +1,8 @@
 //window.onload = function() {
 	
-	var container=document.querySelector('.index-container');
+/*	var container=document.querySelector('.index-container');
 	container.style.width=window.innerWidth;
-	container.style.height=window.innerHeight;
+	container.style.height=window.innerHeight;*/
 
 	$('.app').each(function(index) {
 		$(this).mouseover(function() {
