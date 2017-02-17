@@ -187,6 +187,7 @@ body {
 .naV li {
     display: inline;
     float: right;
+    overflow: hidden;
     margin: 0 22px;
 }
 #nav-a a {
@@ -194,7 +195,6 @@ body {
 	float:left;
 	width: 60px;
 	text-decoration: none;
-	overflow: hidden;
 	-webkit-transform-style: preserve-3d;
 	transition: .5s;
 	-webkit-transform-origin: center center -35px;
