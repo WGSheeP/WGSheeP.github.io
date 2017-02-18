@@ -221,3 +221,31 @@ ul {
 	right: 20px;
 	
 }
+.contact {
+    width: 253px;
+    height: 141px;
+    position: absolute;
+    top: 200px;
+    right: -80px;
+    z-index: 90;
+    cursor: pointer;
+}
+.contact div {
+    width: 253px;
+    height: 156px;
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: 231px 22px;
+    transform-origin: 231px 22px;
+    font-size: 12px;
+    color: #fff;
+}
+.introduction {
+    width: 253px;
+    height: 141px;
+    -webkit-transform-origin: 231px 22px;
+    transform-origin: 231px 22px;
+    -webkit-transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg);
+    position: relative;
+}
