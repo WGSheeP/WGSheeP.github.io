@@ -1,17 +1,17 @@
 #leftCol {
 float:left;
 width:430px;
+height: 100%;
 padding-top:23px;
 text-align:left;
 }
 
 #leftCol .logo{
-padding-bottom:4px;
+width: 200px;
+height: 36px;
+line-height: 36px;	
 }
 
-#leftCol .logo img{
-border:0;
-}
 
 #leftCol .title{
 padding-top:10px;
