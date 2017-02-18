@@ -9,7 +9,12 @@ text-align:left;
 #leftCol .logo{
 width: 200px;
 height: 36px;
-line-height: 36px;	
+line-height: 36px;
+
+}
+#leftCol .logo h2{
+opacity: 0.7;
+color: #89A7AA;		
 }
 
 
