@@ -253,11 +253,11 @@ ul {
     background: url(../../images/contact.png);
     z-index: 3;
 }
-.contact .info {
+.contact .qq {
     background: url(../../images/qq.png);
     z-index: 2;
 }
-.contact .info {
+.contact .code {
     background: url(../../images/code.png);
     z-index: 1;
 }
