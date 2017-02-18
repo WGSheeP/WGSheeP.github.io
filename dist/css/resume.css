@@ -1,0 +1,68 @@
+#leftCol {
+float:left;
+width:430px;
+padding-top:23px;
+text-align:left;
+}
+
+#leftCol .logo{
+padding-bottom:4px;
+}
+
+#leftCol .logo img{
+border:0;
+}
+
+#leftCol .title{
+padding-top:10px;
+}
+
+#leftCol .profile{
+padding-top:12px;
+}
+
+#leftCol .profile .pic{
+float:left;
+}
+
+#leftCol .profile .pic .twitter{
+margin-top:5px;
+padding-left:8px;
+}
+
+#leftCol .profile .pic .twitter img{
+border:0px;
+}
+
+#leftCol .profile .links img{
+margin-right:8px;
+vertical-align: bottom;
+}
+
+#leftCol .skills {
+padding-left:5px;
+padding-top:15px;
+}
+
+#leftCol .skills .allbars{
+float:left;
+}
+
+#leftCol .skills .bars{
+padding-bottom:5px;
+}
+
+#leftCol .skills .bars .bar{
+float:left;
+width:75px;
+font-weight:bold;
+}
+
+#leftCol .skills .bars .showbar{
+padding-top:6px;
+float:left;
+}
+
+#leftCol .skills .pie{
+text-align:right;
+}
