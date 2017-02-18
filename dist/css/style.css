@@ -215,3 +215,9 @@ ul {
   left: 0;
   top: 0;
 }
+#canvas{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	
+}
