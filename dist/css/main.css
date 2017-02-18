@@ -85,13 +85,13 @@ body {
 	background-image: -webkit-linear-gradient(90deg, #395ecb 0%, #3657be 35%, #242161 75%, #1a0531 100%);
 }
 .section2 {
-	background-image: url("../../images/space-12");
+	background-image: url("../../images/space-12.jpg");
 }
 .section3 {
 	background:#000000 url("../../images/bg-wood.jpg") top no-repeat;
 }
 .section3 .contain{
-	background-image: url("../../images/wood-background-2") center top no-repeat;	
+	background-image: url("../../images/wood-background-2.jpg") center top no-repeat;	
 }
 .section4 {
 	background-image: -webkit-linear-gradient(90deg, #ff9f42 0%, #ed923d 35%, #6d3816 75%, #2e0b04 100%);
