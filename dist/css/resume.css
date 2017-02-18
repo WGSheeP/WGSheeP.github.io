@@ -24,6 +24,7 @@ padding-top:12px;
 #leftCol .profile .pic{
 float:left;
 padding: 10px;
+overflow: hidden;
 }
 
 #leftCol .profile .pic .twitter{
