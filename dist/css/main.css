@@ -193,7 +193,7 @@ body {
 	-webkit-transform-style: preserve-3d;    
 }
 #nav-a a {
-	font:16px/30px "宋体";
+	font:16px/30px "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
 	position:relative;
 	float: left;
 	width: 60px;
@@ -207,7 +207,6 @@ body {
 	float:left;
 	width: 60px;
 	text-align: center;
-	border: 1px solid black;
 	-webkit-backface-visibility: hidden;
 }
 
