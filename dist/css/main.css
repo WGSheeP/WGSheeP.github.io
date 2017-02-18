@@ -189,18 +189,18 @@ body {
     display: inline;
     float: right;
     margin: 0 22px;
-    padding: 25px 0;
+    padding: 20px 0;
 	-webkit-transform-style: preserve-3d;    
 }
 #nav-a a {
-	font:14px/20px "宋体";
+	font:16px/30px "宋体";
 	position:relative;
 	float: left;
 	width: 60px;
 	text-decoration: none;
 	-webkit-transform-style: preserve-3d;
 	transition: .5s;
-	-webkit-transform-origin: center center -10px;
+	-webkit-transform-origin: center center -15px;
 }
 
 #nav-a span {
@@ -208,14 +208,13 @@ body {
 	width: 60px;
 	text-align: center;
 	border: 1px solid black;
-	border-radius: 5px;	
 	-webkit-backface-visibility: hidden;
 }
 
 #nav-a span:nth-of-type(2) {
 	position: absolute;
 	left: 0;
-	top: -20px;
+	top: -30px;
 	-webkit-transform-origin: bottom;
 	-webkit-transform: rotateX(90deg);
 }
