@@ -4,6 +4,7 @@ width:430px;
 height: 100%;
 padding-top:23px;
 text-align:left;
+color: #e7e7e7;
 }
 
 #leftCol .logo{
@@ -18,9 +19,10 @@ color: #89A7AA;
 }
 
 
-#leftCol .title{
+#leftCol .title{	
 padding-top:10px;
 }
+
 
 #leftCol .profile{
 padding-top:12px;
