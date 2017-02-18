@@ -91,6 +91,8 @@ body {
 	background:#000000 url("../../images/bg-wood.jpg") top no-repeat;
 }
 .section3 .contain{
+	width: 960px;
+	margin: 0 auto;
 	background-image: url("../../images/wood-background-2.jpg") center top no-repeat;	
 }
 .section4 {
