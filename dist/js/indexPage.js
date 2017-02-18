@@ -94,44 +94,44 @@
 		})
 	}
 	//右键菜单
-	rightMenu();
-	function rightMenu () {
-		var newIndex=0;
-		document.oncontextmenu=function  (e) {		
-
-			$('#rightMenu').attr('style','display:block;left:'+e.clientX+'px;top:'+e.clientY+'px;');
-
-			$('#rightMenu').children().each(function  (index,elem) {
-				
-				if (index==0) {
-					$(elem).mouseover(function  () {
-						$('#rightMenu ul').attr('style','display:none');
-						$('.watch').attr('style','display:block');
-
-					})
-				}else if(index==1){
-					$(elem).mouseover(function  () {
-						$('#rightMenu ul').attr('style','display:none');						
-						$('.arrange').attr('style','display:block');
-			});
-				}
-				else{
-					$(elem).mouseover(function  () {
-						$('#rightMenu ul').attr('style','display:none');						
-			});					
-				}
-			})
-
-		
-
-			
-			return false;
-		}
-		document.onclick=function  () {
-			$('#rightMenu').attr('style','display:none;');			
-		}
-		
-	}
+//	rightMenu();
+//	function rightMenu () {
+//		var newIndex=0;
+//		document.oncontextmenu=function  (e) {		
+//
+//			$('#rightMenu').attr('style','display:block;left:'+e.clientX+'px;top:'+e.clientY+'px;');
+//
+//			$('#rightMenu').children().each(function  (index,elem) {
+//				
+//				if (index==0) {
+//					$(elem).mouseover(function  () {
+//						$('#rightMenu ul').attr('style','display:none');
+//						$('.watch').attr('style','display:block');
+//
+//					})
+//				}else if(index==1){
+//					$(elem).mouseover(function  () {
+//						$('#rightMenu ul').attr('style','display:none');						
+//						$('.arrange').attr('style','display:block');
+//			});
+//				}
+//				else{
+//					$(elem).mouseover(function  () {
+//						$('#rightMenu ul').attr('style','display:none');						
+//			});					
+//				}
+//			})
+//
+//		
+//
+//			
+//			return false;
+//		}
+//		document.onclick=function  () {
+//			$('#rightMenu').attr('style','display:none;');			
+//		}
+//		
+//	}
 	//右键新建
 	//star盒子
 	function star() {
