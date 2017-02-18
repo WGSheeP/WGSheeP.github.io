@@ -261,3 +261,6 @@ ul {
     background: url(../../images/code.png);
     z-index: 1;
 }
+.clearBoth{
+	clear: both;
+}
