@@ -189,14 +189,14 @@ body {
     display: inline;
     float: right;
     margin: 0 22px;
+    padding: 25px 0;
 	-webkit-transform-style: preserve-3d;    
 }
 #nav-a a {
 	font:14px/20px "宋体";
 	position:relative;
-	overflow: hidden;
+	float: left;
 	width: 60px;
-	margin: 25px 0;
 	text-decoration: none;
 	-webkit-transform-style: preserve-3d;
 	transition: .5s;
