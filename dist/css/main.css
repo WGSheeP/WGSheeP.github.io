@@ -94,7 +94,7 @@ body {
 	width: 960px;
 	margin: 0 auto;
 	z-index: 2;
-	background-image: url("../../images/wood-background-2.jpg") center top no-repeat;	
+	background-image: url("../../images/wood-background-2.jpg") top no-repeat;	
 }
 .section4 {
 	background-image: -webkit-linear-gradient(90deg, #ff9f42 0%, #ed923d 35%, #6d3816 75%, #2e0b04 100%);
