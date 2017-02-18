@@ -233,43 +233,4 @@ var orderData= {
 
     ]
 }
-var musicData={
-	items:[{   
-    "title":"every thing i do,i do it for you",
-    "artist":"bryan adams",
-    "cover":"https://img3.doubanio.com\/spic\/s11185741.jpg",
-	"album_title":"For Your Entertainment"
-	},
-	{
-    "title":"Cry On My Shoulder",
-    "artist":"Deutschland Sucht Den Superstar",
-    "cover":"https://img3.doubanio.com\/spic\/s11185741.jpg",
-	"album_title":" "
-	},
-	{
-    "title":"Big Big World",
-    "artist":"Emilia",
-    "cover":"https://img3.doubanio.com\/spic\/s11185741.jpg",
-	"album_title":" "
-	},
-	{
-    "title":"More Than Words",
-    "artist":"extreme",
-    "cover":"https://img3.doubanio.com\/spic\/s11185741.jpg",
-	"album_title":" "
-	},
-	{
-    "title":"Far Away from Home",
-    "artist":"Groove Coverage",
-    "cover":"https://img3.doubanio.com\/spic\/s11185741.jpg",
-	"album_title":"For Your Entertainment"
-	},
-	{
-    "title":"Seasons In The Sun",
-    "artist":"Hit Crew Masters",
-    "cover":"https://img3.doubanio.com\/spic\/s11185741.jpg",
-	"album_title":"For Your Entertainment"
-	}
-	  
-	]
-}
+
