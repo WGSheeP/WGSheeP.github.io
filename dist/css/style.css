@@ -249,3 +249,15 @@ ul {
     transform: rotateZ(-90deg);
     position: relative;
 }
+.contact .info {
+    background: url(../../images/contact.png);
+    z-index: 3;
+}
+.contact .info {
+    background: url(../../images/qq.png);
+    z-index: 2;
+}
+.contact .info {
+    background: url(../../images/code.png);
+    z-index: 1;
+}
