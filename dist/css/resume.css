@@ -5,6 +5,7 @@ height: 100%;
 padding-top:23px;
 text-align:left;
 color: #e7e7e7;
+font-size: 14px;
 }
 
 #leftCol .logo{
@@ -63,7 +64,7 @@ padding-bottom:5px;
 
 #leftCol .skills .bars .bar{
 float:left;
-width:75px;
+width:100px;
 font-weight:bold;
 }
 
@@ -74,4 +75,187 @@ float:left;
 
 #leftCol .skills .pie{
 text-align:right;
+}
+#rightCol {	
+height: 100%;
+text-align:right;
+color: #e7e7e7;
+font-size: 12px;
+padding-left: 40px;
+margin-top: -70px;
+
+
+}
+
+#rightCol .Title{
+padding-top:5px;
+}
+
+#rightCol .menu{
+margin-left:auto;
+width:506px;
+height:60px;
+}
+
+
+#rightCol .menu ul {
+	margin: 0;
+	padding: 0;
+	padding-top:30px;
+	padding-left:0px;
+	list-style: none;
+	display: block;
+}
+#rightCol .menu li {
+	display: block;
+	float: left;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#rightCol .menu li img{
+border:0;
+}			
+
+#rightCol .status{
+margin-left:auto;
+margin-top:10px;
+width:506px;
+height:26px;
+background: url(../../images/statusbar.png) top left;
+margin-bottom:2px;
+}
+
+#rightCol .status .visitors{
+font-weight:bold;
+text-align:left;
+padding-top:2px;
+margin-left:128px;
+width:65px;
+float:left;
+
+
+}
+
+#rightCol .status .pageviews{
+font-weight:bold;
+text-align:left;
+padding-top:2px;
+margin-left:85px;
+float:left;
+width:65px;
+
+}
+
+#rightCol .status .readers{
+font-weight:bold;
+text-align:left;
+padding-top:2px;
+margin-left:100px;
+float:left;
+}
+
+#rightCol .website{
+
+}
+
+#rightCol .entry{
+margin: 5px 20px;
+width:420px;
+height:161px;
+float: left;
+background: url(../../images/entry.png) top left no-repeat;
+text-align:left;
+padding: 10px 15px;
+cursor:pointer;
+}
+
+#rightCol .entry .screenshot{
+width:390px;
+height:141px;
+filter:alpha(opacity=50);
+opacity: 0.5;
+-moz-opacity:0.5;
+transition: 1s;
+}
+#rightCol .entry .screenshot:hover{
+opacity: 1;
+-moz-opacity:1;	
+}
+#rightCol .entry .screenshot a{
+width:390px;
+height:141px;	
+display: block;
+text-decoration: none;
+color: #e7e7e7;
+}
+
+#rightCol .entry .screenshot img{
+width:390px;
+height:141px;	
+display:block;
+vertical-align: top;
+
+}
+
+
+
+#rightCol .entry_desc .desc{
+
+margin-left:25px;
+text-align:left;
+float:left;
+width:469px;
+height:26px;
+padding-top:2px;
+padding-left:37px;
+background: url(images/entry-desc.png) top left no-repeat;
+}
+
+#rightCol .entry_desc .desc .visitors{
+font-weight:bold;
+width:60px;
+float:left;
+}
+
+
+#rightCol .more_desc{
+text-align:left;
+margin-top:10px;
+margin-left:32px;
+display:none;
+}
+
+#rightCol .more_desc p.intro{
+border-bottom:#FFCC33 solid 1px;
+padding-bottom:5px;
+}
+
+#rightCol .more_desc p.url{
+color:#FFCC33;
+width:300px;
+float:right;
+text-align:right;
+padding-right:10px;
+}
+
+#rightCol .more_desc p.url a{
+	color: #f6cc22;
+	text-decoration:none;
+}	
+
+#rightCol .more_desc p.url a:hover{
+	color: #89b8e0;
+}
+
+#rightCol .more_desc p.roles{
+float:right;
+background:#FFCC33;
+color:#000000;
+padding-left:5px;
+padding-right:5px;
+font-weight:bold;
+}
+.clearBoth{
+	clear: both;
 }
