@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Web桌面</title>
     <link rel="stylesheet" href="../dist/css/base-data.css">  
-    <script type="text/javascript" src="../dist/js/baseData.js"></script>
+
 
 </head>
 <body>
@@ -18,146 +18,143 @@
 			</ul>        	
         </div>
 		<div id="base-body">
-			
-	        <div class="col-md-12">
-		        <div class="panel panel-default"  id="dish-types-table">
-		  			<div class="panel-heading" id="dish-btn">菜品管理
-						<!--<a href="javascript:;" class="addDish">添加菜品<span class="glyphicon glyphicon-plus"></span></a>-->
-		  			</div> 
-		  			
-		  			<table class="table table-bordered  table-hover">
-		                <thead>
-		                <tr>
-		                    <th>菜品名称</th>
-		                    <th>菜品价格</th>
-		                    <th>菜品单位</th>
-		                    <th>图片</th>
-		                    <th>菜品分类</th>
-		                    <th>菜品详细类</th>
-		                    <th>菜品介绍</th>
-		                    <th>是否上架</th>
-		                    <th>操作</th>
-		                </tr>
-		                </thead>
-		                <tbody id="dishTable">
-		
-		                </tbody>
-		                <script type="text/html" id="dishTableTemplate">
-		                {{each dish as value index}}
-		                <tr>
-		                    <td>{{value.name}}</td>
-		                    <td>{{value.price}}</td>
-		                    <td>{{value.unit}}</td>
-		                    <td><img src=""/></td>
-		                    <td>{{value.types}}</td>
-		                    <td>{{value.detail}}</td>
-		                    <td>{{value.introduce}}</td>
-		                    <td>{{value.putaway}}</td>
-		                    <td>
-								<a href="javascript:;">编辑</a> |
-								<a href="javascript:;">保存</a> |
-								<a href="javascript:;">删除</a>
-		                    </td>
-		                </tr>
-		                {{/each}}
-		                </script>
-		            </table>
-		            <!--<div class="addBox">
-		            	
-		            </div>-->
-		
-		
-		
-				</div>        	
-	        </div>
-			<div class="col-md-12">
-		        <div class="panel panel-default"  id="dish-desk-table">
-		  			<div class="panel-heading" id="desk-btn">餐桌管理
-					
-		  			</div> 
-		  			<table  class="table table-bordered table-hover">
-		                <thead>
-		                <tr>
-		                    <th>餐桌名称</th>
-		                    <th>餐桌号码</th>
-		                    <th>操作</th>
-		                </tr>
-		                </thead>
-		                <tbody id="deskTable">
-		
-		
-		
-		                </tbody>
-		                <script type="text/html" id="deskTableTemplate">
-		              	{{each desk as value index}}
-		                 <tr>
-		                    <td>{{value.deskName}}</td>
-		                    <td>{{value.deskNum}}</td>
-		
-		                    <td>
-								<a href="javascript:;">编辑</a> |
-								<a href="javascript:;">保存</a> |
-								<a href="javascript:;">删除</a>
-		                    </td>
-		                </tr>            	
-						{{/each}}
-		                </script>
-		            </table>
-		
-				</div>
+	        <div class="panel panel-default"  id="dish-types-table">
+	  			<div class="panel-heading" id="dish-btn">菜品管理
+					<!--<a href="javascript:;" class="addDish">添加菜品<span class="glyphicon glyphicon-plus"></span></a>-->
+	  			</div> 
+	  			
+	  			<table class="table table-bordered  table-hover">
+	                <thead>
+	                <tr>
+	                    <th>菜品名称</th>
+	                    <th>菜品价格</th>
+	                    <th>菜品单位</th>
+	                    <th>图片</th>
+	                    <th>菜品分类</th>
+	                    <th>菜品详细类</th>
+	                    <th>菜品介绍</th>
+	                    <th>是否上架</th>
+	                    <th>操作</th>
+	                </tr>
+	                </thead>
+	                <tbody id="dishTable">
+	
+	                </tbody>
+	                <script type="text/html" id="dishTableTemplate">
+	                {{each dish as value index}}
+	                <tr>
+	                    <td>{{value.name}}</td>
+	                    <td>{{value.price}}</td>
+	                    <td>{{value.unit}}</td>
+	                    <td><img src=""/></td>
+	                    <td>{{value.types}}</td>
+	                    <td>{{value.detail}}</td>
+	                    <td>{{value.introduce}}</td>
+	                    <td>{{value.putaway}}</td>
+	                    <td>
+							<a href="javascript:;">编辑</a> |
+							<a href="javascript:;">保存</a> |
+							<a href="javascript:;">删除</a>
+	                    </td>
+	                </tr>
+	                {{/each}}
+	                </script>
+	            </table>
 				
-			</div>	
-			<div class="col-md-12">
-				<div class="panel panel-default"  id="member-manage-table">
-		  			<div class="panel-heading" id="member-btn">会员管理
-					
-		  			</div> 
-		  			<table  class="table table-bordered table-hover">
-		                <thead>
-		                <tr>
-		                    <th>会员卡号</th>
-		                    <th>会员姓名</th>
-		                    <th>会员级别</th>
-		                    <th>卡内余额</th>
-		                    <th>累计消费</th>
-		                    <th>消费次数</th>
-		                    <th>会员卡状态</th>
-		                    <th>会员证件类型</th>
-		                    <th>证件号码</th>
-		                    <th>操作</th>
-		                </tr>                	
-		                </thead>
-		                <tbody id="memberTable">
-		
-		                </tbody>
-		                <script type="text/html" id="memberTableTemplate">
-		                	{{each member as value index}}
-				                <tr>
-				                    <td>{{value.VipNum}}</td>
-				                    <td>{{value.username}}</td>
-				                    <td>{{value.userLever}}</td>
-				                    <td>{{value.balance}}00</td>
-				                    <td>{{value.expense}}00</td>
-				                    <td>{{value.Num}}</td>
-				                    <td>{{value.status}}</td>
-				                    <td>{{value.cardType}}</td>
-				                    <td>{{value.cardNum}}</td>
-				                    <td>
-										<a href="javascript:;">编辑</a> |
-										<a href="javascript:;">保存</a> |
-										<a href="javascript:;">删除</a>
-				                    </td>                    
-				                </tr>               	
-		                	{{/each}}
-		                </script>
-		            </table>
-		
-		
-		
-				</div>					
-			</div>		
+			</div>
+	            <!--<div class="addBox">
+	            	
+	            </div>-->
+	
+	
+	
+       	
+
+	        <div class="panel panel-default"  id="dish-desk-table">
+	  			<div class="panel-heading" id="desk-btn">餐桌管理
+				
+	  			</div> 
+	  			<table  class="table table-bordered table-hover">
+	                <thead>
+	                <tr>
+	                    <th>餐桌名称</th>
+	                    <th>餐桌号码</th>
+	                    <th>操作</th>
+	                </tr>
+	                </thead>
+	                <tbody id="deskTable">
+	
+	
+	
+	                </tbody>
+	                <script type="text/html" id="deskTableTemplate">
+	              	{{each desk as value index}}
+	                 <tr>
+	                    <td>{{value.deskName}}</td>
+	                    <td>{{value.deskNum}}</td>
+	
+	                    <td>
+							<a href="javascript:;">编辑</a> |
+							<a href="javascript:;">保存</a> |
+							<a href="javascript:;">删除</a>
+	                    </td>
+	                </tr>            	
+					{{/each}}
+	                </script>
+	            </table>
+	
+			</div>
+			
+
+			<div class="panel panel-default"  id="member-manage-table">
+	  			<div class="panel-heading" id="member-btn">会员管理
+				
+	  			</div> 
+	  			<table  class="table table-bordered table-hover">
+	                <thead>
+	                <tr>
+	                    <th>会员卡号</th>
+	                    <th>会员姓名</th>
+	                    <th>会员级别</th>
+	                    <th>卡内余额</th>
+	                    <th>累计消费</th>
+	                    <th>消费次数</th>
+	                    <th>会员卡状态</th>
+	                    <th>会员证件类型</th>
+	                    <th>证件号码</th>
+	                    <th>操作</th>
+	                </tr>                	
+	                </thead>
+	                <tbody id="memberTable">
+	
+	                </tbody>
+	                <script type="text/html" id="memberTableTemplate">
+	                	{{each member as value index}}
+			                <tr>
+			                    <td>{{value.VipNum}}</td>
+			                    <td>{{value.username}}</td>
+			                    <td>{{value.userLever}}</td>
+			                    <td>{{value.balance}}00</td>
+			                    <td>{{value.expense}}00</td>
+			                    <td>{{value.Num}}</td>
+			                    <td>{{value.status}}</td>
+			                    <td>{{value.cardType}}</td>
+			                    <td>{{value.cardNum}}</td>
+			                    <td>
+									<a href="javascript:;">编辑</a> |
+									<a href="javascript:;">保存</a> |
+									<a href="javascript:;">删除</a>
+			                    </td>                    
+			                </tr>               	
+	                	{{/each}}
+	                </script>
+	            </table>
+	
+	
+	
+			</div>						
 		</div>
 	</div>
-
+    <script type="text/javascript" src="../src/js/baseData.js"></script>
 </body>
 </html>

@@ -248,7 +248,7 @@
 	overflow: hidden;
 	padding: 0 50px;
 	color: #e7e7e7;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 #headerTitle {
@@ -318,14 +318,16 @@
 	width: 370px;
 	height: 26px;
 	padding-top: 2px;
-	padding-left: 37px;
+	padding-left: 26px;
+	padding-right: 10px;
 	background: url(../../images/entry-desc.png) top left no-repeat;
 }
 
 #personalList .reply {
 	margin-top: 10px;
-	line-height: 110px;
+	/*line-height: 110px;*/
 	min-height: 110px;
+	padding-top: 10px;
 	-webkit-transform-origin: center -5px;
 	opacity: 1;
 	transition: .6s cubic-bezier(0.280, 0.695, 0.580, 1.450);
