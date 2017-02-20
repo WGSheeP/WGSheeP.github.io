@@ -40,6 +40,9 @@ body {
 .order i {
   background: url("../../images/order.png");
 }
+.musicPlayer i {
+  background: url("../../images/player.png");
+}
 
 #rightMenu {
   position: absolute;

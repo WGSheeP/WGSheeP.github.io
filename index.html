@@ -1,430 +1,401 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>我的空间</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="fullPage:For desktop(ie5.5+) or mobile webApp without jQuery,create full screen pages fast and simple.">
-    <meta name="keywords" content="fullPage,webApp,full screen">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <link rel="stylesheet" href="dist/css/style.css" type="text/css">
-    <link rel="stylesheet" href="dist/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/main.css">    
-    <link rel="stylesheet" type="text/css" href="dist/css/resume.css">    
-	<script src="dist/js/jquery.min.js"></script>
-	<script src="dist/js/bootstrap.js"></script>
-</head>
-<!--[if lte IE 7]>      
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>我的空间</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="fullPage:For desktop(ie5.5+) or mobile webApp without jQuery,create full screen pages fast and simple.">
+		<meta name="keywords" content="fullPage,webApp,full screen">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+		<link rel="stylesheet" href="dist/css/style.css" type="text/css">
+		<link rel="stylesheet" href="dist/css/player.css" type="text/css">
+		<link rel="stylesheet" href="dist/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/resume.css">
+		<script src="dist/js/jquery.min.js"></script>
+		<script src="dist/js/bootstrap.js"></script>
+	</head>
+	<!--[if lte IE 7]>      
 <body scroll="no"> 
 <![endif]-->
-<!--[if gt IE 7]><!--> 
-<body> 
-<!--<![endif]-->
-<div class="naV">
-	<h1>
-		<a href="https://github.com/WGSheeP">
-			<img src="images/logo.jpg" class="logo" alt="https://github.com/WGSheeP">
-			<span>Welcome to my zone !</span>
-		</a>
-	</h1>
-    <ul id="nav-a">
-        <li><a href="#"><span>忆往昔</span><span>忆往昔</span></a></li>
-        <li><a href="#"><span>简历</span><span>简历</span></a></li>
-        <li><a href="#"><span>作品</span><span>作品</span></a></li>
-        <li><a href="#"><span>首页</span><span>首页</span></a></li>        
-    </ul>
-</div>
-	<div id="article">
-		
-		<div class="page section1 current">
-			<div class="contain">
-				<div id="pageContain">
-		
-				<div class="page page1 current">
-					<div class="contain">
-						<h3 class="title">整屏切换组件</h3>
-						<h4 class="titleEng">fullPage</h4>
-						<img src="images/a2.png" alt="HTML,CSS" class="page1-box">
-						<p>使用CSS3动画以及降级处理，兼容到ie6。</p>
-					</div>
-				</div>
+	<!--[if gt IE 7]><!-->
 
-				<div class="page page2">
-					<div class="contain">
-						<h3 class="title">这是轮播第二部分</h3>
-						<h4 class="titleEng">This is 1-2</h4>
-						<img src="images/a10.png" alt="可视化数据" class="page2-box">
-					</div>
-				</div>
-
-				<div class="page page3">
-					<div class="contain">
-						<h3 class="title">可以随意地添加动画</h3>
-						<h4 class="titleEng">could use animation(CSS3)</h4>
-						<img src="images/a13.png" alt="影视制作" class="page3-box">
-					</div>
-					<div class="scTop"></div>
-					<div class="scBottom"></div>
-				</div>
-
-				<div class="page page4">
-					<div class="contain">
-						<h3 class="title">支持手机端触摸</h3>
-						<h4 class="titleEng">Touch it!</h4>
-						<div class="page4-box">
-							<img src="images/a5.png" alt="微信">
-						</div>
-					</div>
-				</div>
-			</div>
-			<ul id="navBar">
-				<li></li>
-				<li></li>
-				<li></li>
- 				<li></li>
+	<body>
+		<!--<![endif]-->
+		<div class="naV">
+			<h1>
+				<a href="https://github.com/WGSheeP">
+					<img src="images/logo.jpg" class="logo" alt="https://github.com/WGSheeP">
+					<span>Welcome to my zone !</span>
+				</a>
+			</h1>
+			<ul id="nav-a">
+				<li>
+					<a href="#"><span>忆往昔</span><span>忆往昔</span></a>
+				</li>
+				<li>
+					<a href="#"><span>简历</span><span>简历</span></a>
+				</li>
+				<li>
+					<a href="#"><span>作品</span><span>作品</span></a>
+				</li>
+				<li>
+					<a href="#"><span>首页</span><span>首页</span></a>
+				</li>
 			</ul>
-
-    			<div id="prev">&lt;</div>
-    			<div id="next">&gt;</div>
-			</div>
 		</div>
 
-		<div class="page section2">
-			<div class="contain">
-				<div class="index-container">
-				    <!--桌面应用-->
-					<div class="app order">
-						<span><i></i><em>食为天点餐</em></span>
+		<div id="article">
+
+			<div class="page section1 current">
+				<div class="contain">
+					<div id="pageContain">
+
+						<div class="page page1 current">
+							<div class="contain">
+								<h3 class="title">整屏切换组件</h3>
+								<h4 class="titleEng">fullPage</h4>
+								<img src="images/a2.png" alt="HTML,CSS" class="page1-box">
+								<p>使用CSS3动画以及降级处理，兼容到ie6。</p>
+							</div>
+						</div>
+
+						<div class="page page2">
+							<div class="contain">
+								<h3 class="title">这是轮播第二部分</h3>
+								<h4 class="titleEng">This is 1-2</h4>
+								<img src="images/a10.png" alt="可视化数据" class="page2-box">
+							</div>
+						</div>
+
+						<div class="page page3">
+							<div class="contain">
+								<h3 class="title">可以随意地添加动画</h3>
+								<h4 class="titleEng">could use animation(CSS3)</h4>
+								<img src="images/a13.png" alt="影视制作" class="page3-box">
+							</div>
+							<div class="scTop"></div>
+							<div class="scBottom"></div>
+						</div>
+
+						<div class="page page4">
+							<div class="contain">
+								<h3 class="title">支持手机端触摸</h3>
+								<h4 class="titleEng">Touch it!</h4>
+								<div class="page4-box">
+									<img src="images/a5.png" alt="微信">
+								</div>
+							</div>
+						</div>
 					</div>
-
-				
-				    <!--/*个人信息介绍*/-->
-				    <div class="contact">
-					    <div class="introduction">
-							<i></i>
-					    	<div class="info">
-					    		<h3>作品介绍</h3>
-					    		<a href="#">详情请戳我！</a>
-					    	</div>
-					    	<div class="qq">
-					    		<h3>联系方式</h3>
-					    		<a href="#">
-					    			<span>QQ：1522467157</span>
-					    			<span>Email：1522467157@qq.com</span>
-					    			<span>telephone:13581595020</span>
-					    		</a>
-					    	</div>
-					    	<div class="code">
-					    		<h3>三码有惊喜</h3>
-					    		<a href="#">
-					    			<img src=""/>
-					    			<p>打开手机扫一扫观看移动端H5</p>
-					    		</a>
-					    	</div>
-					    </div>				    	
-				    </div>
-
-				    <!--点餐系统平台登录-->
-				    <div class="order-login">
-				
-				    </div>
-					<!--右键菜单-->
-					<ul id="rightMenu">
-						<li>查看
-							<ul class="watch">
-								<li>标准图标</li>
-								<li>小图标</li>
-								<li>自动排列图标</li>
-							</ul>
-						</li>
-						<li>排列方式
-							<ul class="arrange">
-								<li>正序</li>
-								<li>反序</li>
-							</ul>
-						</li>
-						<li>刷新</li>
-						<li>新建</li>
-						<li>删除</li>
-						<li>重命名</li>
+					<ul id="navBar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
 					</ul>
-				    <div class=""></div>
-				    <!--流星盒子-->
-				    <div id="star">
-				    	<canvas id="html5-star"></canvas>
-				    </div>
-				
-					<div class="pop-up-box order-box">
-						<div class="order-header-nav pop-nav">
-							<p class="order-box-title">食为天餐饮管理系统</p>
-							<a href="javascript:;" class="quit"><i></i></a>			
-							<a href="javascript:;" class="max"><i class="org"></i><i class="org-max"></i></a>
-							<a href="javascript:;" class="min"><i></i></a>
-						</div>
-						<iframe src="view/indexManage.html" id="order" class="pop-up-box-iframe"></iframe>
-					</div>
-					<canvas id="canvas" width="150" height="150"></canvas>					
+
+					<div id="prev">&lt;</div>
+					<div id="next">&gt;</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="page section3">
-			<div class="contain">
-				<div id="leftCol">
-					<div class="logo">
-						<h2>我的简历</h2>
-					</div>
-	
-					<!-- About Me Section Starts -->
-					
-					<div class="Title">
-						<img src="images/title-aboutme.png" height="25" alt="关于我">				
-					</div>
-					
-					<div class="profile">
-						<div class="pic"><img src="images/logo.jpg" height="177" alt="my picture"></div>
-							
-						<div class="info">
-							前端技术日新月异，对于技术的狂热是每一位前端开发者的不懈追求，怀揣着充满好奇与憧憬未来的心情，踏上这片土地，曾经徘徊在后端与前端的叉路口，最终为了那份好奇与渴求，选择了这片热土。
-							顺应未来的趋势，立志做一个先知先觉的前端探路者，相信一切将缓慢而到来......
-						</div>	 
-						<div class="clearBoth"> </div>						
-					</div>
-
-			
-					
-					<div class="Title">
-						<img src="images/title-skills.png" height="25" alt="My Skills">				
-					</div>
-					
-					<div class="skills">
-						<div class="allbars">
-							<div class="bars">		
-								<div class="bar">jQuery</div>
-								<div class="showbar" title="60%"><img src="images/bar-60.png" alt=""></div>
-							 	<div class="clearBoth"> </div> 
-							</div>
-							<div class="bars">		
-								<div class="bar">Javascript</div>
-								<div class="showbar" title="80%"><img src="images/bar-80.png" alt=""></div>
-								<div class="clearBoth"> </div> 
-							</div>
-							<div class="bars">		
-								<div class="bar">CSS3</div>
-								<div class="CSS" title="80%"><img src="images/bar-80.png" alt=""></div>
-								<div class="clearBoth"> </div> 
-							</div> 
-							<div class="bars">		
-								<div class="bar">HTML</div>
-								<div class="HTML" title="70%"><img src="images/bar-70.png" alt=""></div>
-								<div class="clearBoth"> </div> 
-							</div> 
-							<div class="bars">		
-								<div class="bar">Node.js</div>
-								<div class="showbar" title="70%"><img src="images/bar-60.png" alt=""></div>
-								<div class="clearBoth"> </div> 
-							</div> 												 
+			<div class="page section2">
+				<div class="contain">
+					<div class="index-container">
+						<!--桌面应用-->
+						<div class="app order">
+							<span><i></i><em>食为天点餐</em></span>
 						</div>
-															
-					</div>					
-					
-				</div>
-				<div id="personal">
-					<header id="headerTitle">个人信息</header>
-				    <ul id="personalList">
-				    	<li>
-				        	<div class="information">
-				            	<div class="pic"></div>
-				                <div class="ico"></div>
-				                <div class="content text">&#12288;&#12288;&#12288;介绍</div>
-				                <div class="reply text">
-				                	王国梁&#12288;26&#12288;现居北京&#12288;&#12288;&#12288;
-				                	
-				                </div>
-				            </div>
-				        </li>
-				    	<li>
-				        	<div class="information">
-				            	<div class="pic"></div>
-				                <div class="ico"></div>
-				                <div class="content text">&#12288;&#12288;&#12288;技能</div>
-				                <div class="reply text">
-				                	熟练HTML，CSS3，熟练使用HTML5能熟练的对页面做出正确的模块分析及渲染；
-									能使用Jquery进行基本页面特效编写，使用js对函数进行封装，实现组件化开发；
-									用Ajax进行数据交互；
-									使用gulp实现服务器的开启，less的编译，js的打包压,页面的热重载等功能。				                	
-				                </div>
-				            </div>
-				        </li>
-				    	<li>
-				        	<div class="information">
-				            	<div class="pic"></div>
-				                <div class="ico"></div>
-				                <div class="content text">&#12288;&#12288;&#12288;联系方式</div>
-				                <div class="reply text">
-									电话：&#12288;13581595020&#12288;&#12288;Email:&#12288;1522467157@qq.com
-				                </div>
-				            </div>
-				        </li>
-				    </ul>
-				</div>				
-			</div>
-		</div>
+						<div class="app musicPlayer">
+							<span><i></i><em>播放器</em></span>
+						</div>
 
-		<div class="page section4">
-			<div class="contain">
-				<div id="rightCol">
-				
-					<div class="menu">
-						<ul>
-							<li><img src="images/menu-button2-1.png" id="menu_home" alt="About Me"></li>
-							<li><img src="images/menu-button2-2.png" id="menu_work" alt="My Work"></li>
-							<li><img src="images/menu-button2-3.png" id="menu_awards" alt="Recognitions"></li>
-							<li><img src="images/menu-button2-4.png" id="menu_contact" alt="Contact Me"></li>																		
+						<!--/*个人信息介绍*/-->
+						<div class="contact">
+							<div class="introduction">
+								<i></i>
+								<div class="info">
+									<h3>作品介绍</h3>
+									<a href="#">详情请戳我！</a>
+								</div>
+								<div class="qq">
+									<h3>联系方式</h3>
+									<a href="#">
+										<span>QQ：1522467157</span>
+										<span>Email：1522467157@qq.com</span>
+										<span>telephone:13581595020</span>
+									</a>
+								</div>
+								<div class="code">
+									<h3>三码有惊喜</h3>
+									<a href="#">
+										<img src="" />
+										<p>打开手机扫一扫观看移动端H5</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--播放器界面-->
+						<div class="music-player">
+							<div class="info">
+								<div class="left">
+									<a href="javascript:;" class="icon-shuffle"></a>
+									<a href="javascript:;" class="icon-heart"></a>
+								</div>
+								<div class="center">
+									<div class="jp-playlist">
+										<ul>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+								<div class="right">
+									<a href="javascript:;" class="icon-repeat"></a>
+									<a href="javascript:;" class="icon-share"></a>
+								</div>
+								<div class="progress jp-seek-bar"> <span class="jp-play-bar" style="width: 0%"></span> </div>
+							</div>
+							<div class="controls">
+								<div class="current jp-current-time">00:00</div>
+								<div class="play-controls">
+									<a href="javascript:;" class="icon-previous jp-previous" title="previous"></a>
+									<a href="javascript:;" class="icon-play jp-play" title="play"></a>
+									<a href="javascript:;" class="icon-pause jp-pause" title="pause"></a>
+									<a href="javascript:;" class="icon-next jp-next" title="next"></a>
+								</div>
+								<div class="volume-level jp-volume-bar">
+									<span class="jp-volume-bar-value" style="width: 0%"></span>
+									<a href="javascript:;" class="icon-volume-up jp-volume-max" title="max volume"></a>
+									<a href="javascript:;" class="icon-volume-down jp-mute" title="mute"></a>
+								</div>
+							</div>
+							<div id="jquery_jplayer" class="jp-jplayer"></div>
+						</div>
+						<!--点餐系统平台登录-->
+						<div class="order-login">
+
+						</div>
+						
+						<div class="pop-up-box order-box">
+							<div class="order-header-nav pop-nav">
+								<p class="order-box-title">食为天餐饮管理系统</p>
+								<a href="javascript:;" class="quit"><i></i></a>
+								<a href="javascript:;" class="max"><i class="org"></i><i class="org-max"></i></a>
+								<a href="javascript:;" class="min"><i></i></a>
+							</div>
+							<iframe src="view/indexManage.html" id="order" class="pop-up-box-iframe"></iframe>
+						</div>
+						<canvas id="canvas" width="150" height="150"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="page section3">
+				<div class="contain">
+					<div id="leftCol">
+						<div class="logo">
+							<h2>我的简历</h2>
+						</div>
+
+						<!-- About Me Section Starts -->
+
+						<div class="Title">
+							<img src="images/title-aboutme.png" height="25" alt="关于我">
+						</div>
+
+						<div class="profile">
+							<div class="pic"><img src="images/logo.jpg" height="177" alt="my picture"></div>
+
+							<div class="info">
+								前端技术日新月异，对于技术的狂热是每一位前端开发者的不懈追求，怀揣着充满好奇与憧憬未来的心情，踏上这片土地，曾经徘徊在后端与前端的叉路口，最终为了那份好奇与渴求，选择了这片热土。 顺应未来的趋势，立志做一个先知先觉的前端探路者，相信一切将缓慢而到来......
+							</div>
+							<div class="clearBoth"> </div>
+						</div>
+
+						<div class="Title">
+							<img src="images/title-skills.png" height="25" alt="My Skills">
+						</div>
+
+						<div class="skills">
+							<div class="allbars">
+								<div class="bars">
+									<div class="bar">jQuery</div>
+									<div class="showbar" title="60%"><img src="images/bar-60.png" alt=""></div>
+									<div class="clearBoth"> </div>
+								</div>
+								<div class="bars">
+									<div class="bar">Javascript</div>
+									<div class="showbar" title="80%"><img src="images/bar-80.png" alt=""></div>
+									<div class="clearBoth"> </div>
+								</div>
+								<div class="bars">
+									<div class="bar">CSS3</div>
+									<div class="CSS" title="80%"><img src="images/bar-80.png" alt=""></div>
+									<div class="clearBoth"> </div>
+								</div>
+								<div class="bars">
+									<div class="bar">HTML</div>
+									<div class="HTML" title="70%"><img src="images/bar-70.png" alt=""></div>
+									<div class="clearBoth"> </div>
+								</div>
+								<div class="bars">
+									<div class="bar">Node.js</div>
+									<div class="showbar" title="70%"><img src="images/bar-60.png" alt=""></div>
+									<div class="clearBoth"> </div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div id="personal">
+						<header id="headerTitle">个人信息</header>
+						<ul id="personalList">
+							<li>
+								<div class="information">
+									<div class="pic"></div>
+									<div class="ico"></div>
+									<div class="content text">&#12288;&#12288;&#12288;介绍</div>
+									<div class="reply text">
+										王国梁&#12288;26&#12288;现居北京&#12288;&#12288;&#12288;
+
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="information">
+									<div class="pic"></div>
+									<div class="ico"></div>
+									<div class="content text">&#12288;&#12288;&#12288;技能</div>
+									<div class="reply text">
+										熟练HTML，CSS3，熟练使用HTML5能熟练的对页面做出正确的模块分析及渲染； 能使用Jquery进行基本页面特效编写，使用js对函数进行封装，实现组件化开发； 用Ajax进行数据交互； 使用gulp实现服务器的开启，less的编译，js的打包压,页面的热重载等功能。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="information">
+									<div class="pic"></div>
+									<div class="ico"></div>
+									<div class="content text">&#12288;&#12288;&#12288;联系方式</div>
+									<div class="reply text">
+										电话：&#12288;13581595020&#12288;&#12288;Email:&#12288;1522467157@qq.com
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
-					<div class="status"><div class="visitors">60</div><div class="pageviews">37</div><div class="readers">139</div></div>
-					
-					
-					<div class="Title">
-						<img src="images/title-projects.png" height="25" alt="My Work">				
-					</div>		
-												
-					<div class="website">
-						<div class="entry"><div class="screenshot"><a href="https://github.com/WGSheeP" title="戳我查看HTML练习"><p>
-							&#12288;&#12288;HTML作为前端页面的主要结构层，适当的标签语义化对于搜索引擎查询，页面结构维护等方面将起到很好的优化作用，而HTML5新增的header、nav、article、section、aside、footer等标签则让结构更加的清晰，将功能区域直观的展现在开发者，用户以及搜索引擎面前，利于后期的开发与维护，降低更改页面时因页面结构混乱而消耗的时间成本。
-							同时，HTML5新增的关于图片、位置、储存、表单、本地数据等功能也将对于我们未来的网页展现是一个全新的体验。
-						</p></a></div></div>		
-					</div>
-					<div class="website">
-						<div class="entry"><div class="screenshot"><a href="https://github.com/WGSheeP" title="戳我查看CSS3练习"><p>
-							&#12288;&#12288;CSS即层叠样式表，顾名思义，就是说可以实现页面中样式的层叠，便于精准的控制样式，作为页面结构的表现层，部分样式可以在结构样式中继承，具有级别优先特性，所以在开发时需要注意优先级问题；在布局方面，为了便于布局的多样性，又有各种盒模型，定位和浮动等布局方法，CSS3中极大地丰富了样式的种类，添加了flex-box布局模型，动画属性，3D属性，文字特效、
-							背景和边框等，对于和用户体验可以说是突破性的发展，但是对于当前低版本浏览器的兼容问题，一直是开发者头疼的事，随着未来浏览器的更新，CSS3将是众望所归。
-						</p></a></div></div>		
-					</div>
-					<div class="website">
-						<div class="entry"><div class="screenshot"><a href="https://github.com/WGSheeP" title="戳我查看Javascript练习"><p>
-							&#12288;&#12288;Javascript作为目前非常火爆的一门脚本语言，用来给HTML网页增加动态功能，增强页面与用户的交互感，语言分为标准语法ECMAScript，文档对象模型（DOM）和浏览器对象模型（BOM），ECMAScript定义了使用的方法和规则，DOM用于把文档节点当作对象一样去操作，拥有属性和方法，BOM则是针对于客户端浏览器的所拥有的对象的操作，比如顶层window、
-							url对象location、浏览器信息对象navigator、历史对象history等，但是Javascript作为一门弱类型语言，只有理解了最底层的规则才能去更好的实现其强大的功能。
-						</p></a></div></div>		
-					</div>
-					<div class="website">
-						<div class="entry"><div class="screenshot"><a href="https://github.com/WGSheeP/form-search" title="戳我查看react.js练习"><p>
-							&#12288;&#12288;React是一款采用声明式规则，通过操作虚拟DOM，实现对页面的即时更新web开发工具，其组件化的开发模式，独立性和低耦合高内聚的开发体验是我非常喜欢的，在日常维护和修改页面时，常常会因为页面内部逻辑千丝万缕的联系而牵一发动全身，对于开发者产生极大的麻烦，而页面结构组件化，业务逻辑模块化将是更好的构架模式，便于结构和逻辑的管理维护，通过一个简单的查询表单的开发，
-							运用react.js实现的由数据渲染页面的例子更深刻的展现了其强大的动态交互能力；
-						</p></a></div></div>		
-					</div>
-					<div class="website">
-						<div class="entry"><div class="screenshot"><a href="https://github.com/WGSheeP" title="戳我查看移动端H5游戏练习"><p>
-							&#12288;&#12288;移动端开发，尤其是移动端H5页面目前已经在手机端非常的普遍，各种近原生App框架的普及，更是大大加快了移动web的开发速度，而且其体验效果也更加的接近原生App；对于移动端WEB，在实践中，我认为主要存在各种机型的适配问题，性能的优化问题，毕竟手机端由于内存的限制，功能有一定局限，性能的优化就显得极为重要，在操作方面，和PC端主要的不同在于鼠标的点击和手指的触摸，
-							而近期腾讯强推的微信小程序，基于其强大的用户平台，更有可能掀起一场技术革命。
-						</p></a></div></div>		
-					</div>
-					<div class="website">
-						<div class="entry"><div class="screenshot"><a href="https://github.com/WGSheeP/gulpfile" title="戳我查看gulp练习"><p>
-							&#12288;&#12288;Gulp.js 是一个自动化构建工具,开发者可以使用它在项目开发过程中自动执行常见任务。比如在创建一个项目时，引入gulp模块，然后用npm管理工具下载所需要的相关插件，然后调用执行任务所需要的gulp命令，流程为引入文件，执行任务，执行后的文件路径；可以完成本地服务器的开启，任务的监听，热重载等一系列任务，做到项目的自动化执行，使开发者可以全身心的开发相关业务代码，
-							更加专注于本质性的问题解决。
-						</p></a></div></div>		
-					</div>
-																							
 				</div>
-				<div class="clearBoth"> </div>				
+			</div>
+
+			<div class="page section4">
+				<div class="contain">
+					<div id="rightCol">
+
+						<div class="menu">
+							<ul>
+								<li><img src="images/menu-button2-1.png" id="menu_home" alt="About Me"></li>
+								<li><img src="images/menu-button2-2.png" id="menu_work" alt="My Work"></li>
+								<li><img src="images/menu-button2-3.png" id="menu_awards" alt="Recognitions"></li>
+								<li><img src="images/menu-button2-4.png" id="menu_contact" alt="Contact Me"></li>
+							</ul>
+						</div>
+						<div class="status">
+							<div class="visitors">60</div>
+							<div class="pageviews">37</div>
+							<div class="readers">139</div>
+						</div>
+
+						<div class="Title">
+							<img src="images/title-projects.png" height="25" alt="My Work">
+						</div>
+
+						<div class="website">
+							<div class="entry">
+								<div class="screenshot">
+									<a href="https://github.com/WGSheeP" title="戳我查看HTML练习">
+										<p>
+											&#12288;&#12288;HTML作为前端页面的主要结构层，适当的标签语义化对于搜索引擎查询，页面结构维护等方面将起到很好的优化作用，而HTML5新增的header、nav、article、section、aside、footer等标签则让结构更加的清晰，将功能区域直观的展现在开发者，用户以及搜索引擎面前，利于后期的开发与维护，降低更改页面时因页面结构混乱而消耗的时间成本。 同时，HTML5新增的关于图片、位置、储存、表单、本地数据等功能也将对于我们未来的网页展现是一个全新的体验。
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="website">
+							<div class="entry">
+								<div class="screenshot">
+									<a href="https://github.com/WGSheeP" title="戳我查看CSS3练习">
+										<p>
+											&#12288;&#12288;CSS即层叠样式表，顾名思义，就是说可以实现页面中样式的层叠，便于精准的控制样式，作为页面结构的表现层，部分样式可以在结构样式中继承，具有级别优先特性，所以在开发时需要注意优先级问题；在布局方面，为了便于布局的多样性，又有各种盒模型，定位和浮动等布局方法，CSS3中极大地丰富了样式的种类，添加了flex-box布局模型，动画属性，3D属性，文字特效、 背景和边框等，对于和用户体验可以说是突破性的发展，但是对于当前低版本浏览器的兼容问题，一直是开发者头疼的事，随着未来浏览器的更新，CSS3将是众望所归。
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="website">
+							<div class="entry">
+								<div class="screenshot">
+									<a href="https://github.com/WGSheeP" title="戳我查看Javascript练习">
+										<p>
+											&#12288;&#12288;Javascript作为目前非常火爆的一门脚本语言，用来给HTML网页增加动态功能，增强页面与用户的交互感，语言分为标准语法ECMAScript，文档对象模型（DOM）和浏览器对象模型（BOM），ECMAScript定义了使用的方法和规则，DOM用于把文档节点当作对象一样去操作，拥有属性和方法，BOM则是针对于客户端浏览器的所拥有的对象的操作，比如顶层window、 url对象location、浏览器信息对象navigator、历史对象history等，但是Javascript作为一门弱类型语言，只有理解了最底层的规则才能去更好的实现其强大的功能。
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="website">
+							<div class="entry">
+								<div class="screenshot">
+									<a href="https://github.com/WGSheeP/form-search" title="戳我查看react.js练习">
+										<p>
+											&#12288;&#12288;React是一款采用声明式规则，通过操作虚拟DOM，实现对页面的即时更新web开发工具，其组件化的开发模式，独立性和低耦合高内聚的开发体验是我非常喜欢的，在日常维护和修改页面时，常常会因为页面内部逻辑千丝万缕的联系而牵一发动全身，对于开发者产生极大的麻烦，而页面结构组件化，业务逻辑模块化将是更好的构架模式，便于结构和逻辑的管理维护，通过一个简单的查询表单的开发， 运用react.js实现的由数据渲染页面的例子更深刻的展现了其强大的动态交互能力；
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="website">
+							<div class="entry">
+								<div class="screenshot">
+									<a href="https://github.com/WGSheeP" title="戳我查看移动端H5游戏练习">
+										<p>
+											&#12288;&#12288;移动端开发，尤其是移动端H5页面目前已经在手机端非常的普遍，各种近原生App框架的普及，更是大大加快了移动web的开发速度，而且其体验效果也更加的接近原生App；对于移动端WEB，在实践中，我认为主要存在各种机型的适配问题，性能的优化问题，毕竟手机端由于内存的限制，功能有一定局限，性能的优化就显得极为重要，在操作方面，和PC端主要的不同在于鼠标的点击和手指的触摸， 而近期腾讯强推的微信小程序，基于其强大的用户平台，更有可能掀起一场技术革命。
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="website">
+							<div class="entry">
+								<div class="screenshot">
+									<a href="https://github.com/WGSheeP/gulpfile" title="戳我查看gulp练习">
+										<p>
+											&#12288;&#12288;Gulp.js 是一个自动化构建工具,开发者可以使用它在项目开发过程中自动执行常见任务。比如在创建一个项目时，引入gulp模块，然后用npm管理工具下载所需要的相关插件，然后调用执行任务所需要的gulp命令，流程为引入文件，执行任务，执行后的文件路径；可以完成本地服务器的开启，任务的监听，热重载等一系列任务，做到项目的自动化执行，使开发者可以全身心的开发相关业务代码， 更加专注于本质性的问题解决。
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="clearBoth"> </div>
+				</div>
 			</div>
 		</div>
-	</div>
-<script type="text/javascript" src="dist/js/fullPage.min.js"></script>
-<script type="text/javascript" src="dist/js/indexPage.js"></script>
-<script type="text/javascript">
-	
-var runPage,
-	runPage2,
-    interval,
-    autoPlay;
-
-autoPlay = function(to) {
-
-    clearTimeout(interval);
-    interval = setTimeout(function() {
-        runPage.go(to);
-    }, 5000);
-
-}
-
-runPage = new FullPage({
-
-	id : 'pageContain',                            // id of contain
-	slideTime : 1000,                               // time of slide
-    effect : {                                     // slide effect
-        transform : {
-        	translate : 'X',					   // 'X'|'Y'|'XY'|'none'
-        	scale : [0, 1],					   // [scalefrom, scaleto]
-        	rotate : [0, 0]					   // [rotatefrom, rotateto]
-        },
-        opacity : [0, 1]                           // [opacityfrom, opacityto]
-    },                           
-	mode : 'touch,nav:navBar',               // mode of fullpage
-	easing : [0, .93, .39, .98],                                // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1] )
-    callback : function(index, thisPage) {     // callback when pageChange
-
-        index = index + 1 > 3 ? 0 : index + 1;
-        autoPlay(index);
-    }
-});
-
-runSection = new FullPage({
-
-	id : 'article',  // id of contain
-	navTitle:document.querySelector('.naV'),	
-	naV:document.querySelectorAll('#nav-a a'),	
-	slideTime : 800,                               // time of slide
-    effect : {                                     // slide effect
-        transform : {
-        	translate : 'Y',					   // 'X'|'Y'|'XY'|'none'
-        	scale : [0, 1],					   // [scalefrom, scaleto]
-        	rotate : [0, 0]					   // [rotatefrom, rotateto]
-        },
-        opacity : [0, 1]                           // [opacityfrom, opacityto]
-    },                           
-	mode : 'touch,wheel,click',               // mode of fullpage
-	easing : [0, .93, .39, .98],
-	callback : function(index, thisPage) {     // callback when pageChange
-
-        if (index === 0) {
-        	autoPlay(runPage.thisPage() + 1);
-        } else {
-        	clearTimeout(interval);
-        }
-    }
-});
-
-interval = setTimeout(function() {
-    runPage.go(runPage.thisPage() + 1);
-}, 5000);
-
-</script>
-
-<script type="text/javascript">
-    
-    var prev = document.getElementById('prev'),
-        next = document.getElementById('next');
-    
-    prev.onclick = function() {
-        runPage.go(runPage.thisPage() - 1);
-    }
-    next.onclick = function() {
-        runPage.go(runPage.thisPage() + 1);
-    }
-
-</script>
+		<script type="text/javascript" src="dist/js/fullPage.min.js"></script>
+		<script type="text/javascript" src="dist/js/indexPage.js"></script>
+		<script type="text/javascript" src="dist/js/runpage.js"></script>
 
 
-	<!--[if lte IE 6]>
+		<!--[if lte IE 6]>
 	<script type="text/javascript" src="http://mat1.gtimg.com/cd/201108/app/DD_belatedPNG_0.0.8a.js" charset="utf-8"></script>
 	<script type="text/javascript">
 	DD_belatedPNG.fix("*");
 	</script>
-	<![endif]--> 
+	<![endif]-->
 
-</body>
+	</body>
+
 </html>
