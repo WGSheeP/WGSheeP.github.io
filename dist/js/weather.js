@@ -69,10 +69,10 @@ function showDaily(data) {
 
 function getData() {
 	var script1 = document.createElement('script');
-	script1.src = 'https://api.thinkpage.cn/v3/weather/now.json?ts=1487674365&ttl=360000&uid=U2192B8D31&sig=j2Oe9c4O718EsxTfhRJOcdJgmwA%3D&callback=showWeather&location=' + currentCity;
+	script1.src = 'https://api.thinkpage.cn/v3/weather/now.json?ts=1487675732&ttl=360000&uid=U2192B8D31&sig=lAHhlTb0fLRGGDW6mPjygWZ6x%2FA%3D&callback=showWeather&location=' + currentCity;
 
 	var script2 = document.createElement('script');
-	script2.src = 'https://api.thinkpage.cn/v3/weather/daily.json?ts=1487674365&ttl=360000&uid=U2192B8D31&sig=j2Oe9c4O718EsxTfhRJOcdJgmwA%3D&callback=showDaily&start=0&days=3&location=' + currentCity;
+	script2.src = 'https://api.thinkpage.cn/v3/weather/daily.json?ts=1487675732&ttl=360000&uid=U2192B8D31&sig=lAHhlTb0fLRGGDW6mPjygWZ6x%2FA%3D&callback=showDaily&start=0&days=3&location=' + currentCity;
 
 	document.body.appendChild(script1);
 	document.body.appendChild(script2);
