@@ -289,12 +289,12 @@ ul {
 	top: 100px;
 }
 
-#weather h1 span,
-h1 strong {
-	font-size: 14px;
+#weather h3 span,
+h3 strong {
+	font-size: 12px;
 }
 
-#weather h1 img {
+#weather h3 img {
 	width: 30px;
 }
 
