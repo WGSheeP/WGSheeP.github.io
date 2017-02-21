@@ -48,45 +48,41 @@
 		</div>
 
 		<div id="article">
-
+			
 			<div class="page section1 current">
 				<div class="contain">
 					<div id="pageContain">
 
 						<div class="page page1 current">
 							<div class="contain">
-								<h3 class="title">整屏切换组件</h3>
-								<h4 class="titleEng">fullPage</h4>
-								<img src="images/a2.png" alt="HTML,CSS" class="page1-box">
-								<p>使用CSS3动画以及降级处理，兼容到ie6。</p>
+								<h3 class="title">STUDY</h3>
+								<h4 class="titleEng">How do you communicate the joy of learning?</h4>
+								<h1 class="page1-box">Everything will be easier.</h1>
+								<p>Follow me to start</p>
 							</div>
 						</div>
 
 						<div class="page page2">
 							<div class="contain">
-								<h3 class="title">这是轮播第二部分</h3>
-								<h4 class="titleEng">This is 1-2</h4>
-								<img src="images/a10.png" alt="可视化数据" class="page2-box">
+								<h3 class="title">Focused</h3>
+								<h4 class="titleEng"> Get to the heart of the matte.</h4>
+								<h1 class="page2-box">Everything will be easier.</h1>
 							</div>
 						</div>
 
 						<div class="page page3">
 							<div class="contain">
-								<h3 class="title">可以随意地添加动画</h3>
-								<h4 class="titleEng">could use animation(CSS3)</h4>
-								<img src="images/a13.png" alt="影视制作" class="page3-box">
+								<h3 class="title">SHARE</h3>
+								<h4 class="titleEng">Learn to share and you will be happier.</h4>
+								<h1 class="page3-box">Everything will be easier.</h1>
 							</div>
-							<div class="scTop"></div>
-							<div class="scBottom"></div>
 						</div>
 
 						<div class="page page4">
 							<div class="contain">
-								<h3 class="title">支持手机端触摸</h3>
-								<h4 class="titleEng">Touch it!</h4>
-								<div class="page4-box">
-									<img src="images/a5.png" alt="微信">
-								</div>
+								<h3 class="title">Explore</h3>
+								<h4 class="titleEng"> Get to the heart of the matte.</h4>
+								<h1 class="page1-box">To explore the unknown and increase knowledge.</h1>
 							</div>
 						</div>
 					</div>
@@ -111,6 +107,12 @@
 						</div>
 						<div class="app musicPlayer">
 							<span><i></i><em>播放器</em></span>
+						</div>
+						<div class="app weather">
+							<span><i></i><em>天气</em></span>
+						</div>
+						<div class="app clock">
+							<span><i></i><em>时钟</em></span>
 						</div>
 
 						<!--/*个人信息介绍*/-->
@@ -139,40 +141,46 @@
 							</div>
 						</div>
 						<!--播放器界面-->
-						<div class="music-player">
-							<div class="info">
-								<div class="left">
-									<a href="javascript:;" class="icon-shuffle"></a>
-									<a href="javascript:;" class="icon-heart"></a>
+						<div id="music-player">
+							<div class="closed">
+								
+							</div>
+							<div class="music-player">
+								<div class="info">
+									<div class="left">
+										<a href="javascript:;" class="icon-shuffle"></a>
+										<a href="javascript:;" class="icon-heart"></a>
+									</div>
+									<div class="center">
+										<div class="jp-playlist">
+											<ul>
+												<li></li>
+											</ul>
+										</div>
+									</div>
+									<div class="right">
+										<a href="javascript:;" class="icon-repeat"></a>
+										<a href="javascript:;" class="icon-share"></a>
+									</div>
+									<div class="progress jp-seek-bar"> <span class="jp-play-bar" style="width: 0%"></span> </div>
 								</div>
-								<div class="center">
-									<div class="jp-playlist">
-										<ul>
-											<li></li>
-										</ul>
+								<div class="controls">
+									<div class="current jp-current-time">00:00</div>
+									<div class="play-controls">
+										<a href="javascript:;" class="icon-previous jp-previous" title="previous"></a>
+										<a href="javascript:;" class="icon-play jp-play" title="play"></a>
+										<a href="javascript:;" class="icon-pause jp-pause" title="pause"></a>
+										<a href="javascript:;" class="icon-next jp-next" title="next"></a>
+									</div>
+									<div class="volume-level jp-volume-bar">
+										<span class="jp-volume-bar-value" style="width: 0%"></span>
+										<a href="javascript:;" class="icon-volume-up jp-volume-max" title="max volume"></a>
+										<a href="javascript:;" class="icon-volume-down jp-mute" title="mute"></a>
 									</div>
 								</div>
-								<div class="right">
-									<a href="javascript:;" class="icon-repeat"></a>
-									<a href="javascript:;" class="icon-share"></a>
-								</div>
-								<div class="progress jp-seek-bar"> <span class="jp-play-bar" style="width: 0%"></span> </div>
+								<div id="jquery_jplayer" class="jp-jplayer"></div>								
 							</div>
-							<div class="controls">
-								<div class="current jp-current-time">00:00</div>
-								<div class="play-controls">
-									<a href="javascript:;" class="icon-previous jp-previous" title="previous"></a>
-									<a href="javascript:;" class="icon-play jp-play" title="play"></a>
-									<a href="javascript:;" class="icon-pause jp-pause" title="pause"></a>
-									<a href="javascript:;" class="icon-next jp-next" title="next"></a>
-								</div>
-								<div class="volume-level jp-volume-bar">
-									<span class="jp-volume-bar-value" style="width: 0%"></span>
-									<a href="javascript:;" class="icon-volume-up jp-volume-max" title="max volume"></a>
-									<a href="javascript:;" class="icon-volume-down jp-mute" title="mute"></a>
-								</div>
-							</div>
-							<div id="jquery_jplayer" class="jp-jplayer"></div>
+
 						</div>
 						<!--点餐系统平台登录-->
 						<div class="order-login">
@@ -386,7 +394,9 @@
 		</div>
 		<script type="text/javascript" src="dist/js/fullPage.min.js"></script>
 		<script type="text/javascript" src="dist/js/indexPage.js"></script>
+		<script type="text/javascript" src="dist/js/clockTool.js"></script>
 		<script type="text/javascript" src="dist/js/runpage.js"></script>
+		<script type="text/javascript" src="dist/js/player.js"></script>
 
 
 		<!--[if lte IE 6]>

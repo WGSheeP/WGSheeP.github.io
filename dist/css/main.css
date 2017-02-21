@@ -70,16 +70,16 @@ body {
     -webkit-transition-duration: 0ms !important;
 }
 .page1 {
-	background: #29948f;
+	background-image: url("../../images/bg1.jpg");
 }
 .page2 {
-	background: #2f2f2f;
+	background-image: url("../../images/bg2.jpg");
 }
 .page3 {
-	background: #fff;
+	background-image: url("../../images/bg4.jpg");
 }
 .page4 {
-	background: #3c8847;
+	background-image: url("../../images/bg5.jpg");
 }
 .section1 {
 	background-image: -webkit-linear-gradient(90deg, #395ecb 0%, #3657be 35%, #242161 75%, #1a0531 100%);
@@ -134,23 +134,7 @@ body {
     width: 10px;
     height: 10px;
 }
-#prev,#next {
-    z-index: 4;
-    text-align: center;
-    line-height: 40px;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    cursor:pointer;
-    margin-top: -20px;
-}
-#prev {
-    left: 0
-}
-#next {
-    right: 0
-}
+
 .naV {
     z-index: 5;
     position: fixed;
@@ -268,17 +252,19 @@ body {
     margin-left: -200px;
     margin-top: 50px;
 }
-.page3 .title,.page3 .titleEng {
-    top: 25%;
-    color: #333;
-}
+
 .page1 p {
+	padding: 10px 25px;
+    border: 3px solid white;
+    text-transform: uppercase;
     font-size: 24px;
     color: #fff;
     text-align: center;
     position: absolute;
-    bottom: 180px;
-    width: 100%;
+    bottom: 100px;
+    width: 400px;
+    left: 50%;    
+    margin-left: -200px;
     -webkit-animation:scaleIn .6s ease 2s both;
     -moz-animation:scaleIn .6s ease 2s both;
     -ms-animation:scaleIn .6s ease 2s both;
@@ -289,65 +275,46 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    text-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 90px;
+    color: white;
     -webkit-animation:scaleAll .7s ease-in-out 1.6s both;
     -moz-animation:scaleAll .7s ease-in-out 1.6s both;
     -ms-animation:scaleAll .7s ease-in-out 1.6s both;
-    animation:scaleAll .7s ease-in-out 1.6s both;
+    animation:scaleAll .7s ease-in-out 1.6s both;    
 }
 .page1-box {
-    margin-left: -182px;
-    margin-top: -150px;
-    width: 365px;
-    height: 347px;
+	width: 1000px;
+    height: 115px;
+    line-height: 115px;
+    margin-left: -500px;
+    margin-top: -100px;
+
 }
 .page2-box {
-    margin-left: -366px;
-    margin-top: -151px;
-    width: 733px;
-    height: 302px;
+	width: 1000px;
+    height: 115px;
+    line-height: 115px;
+    margin-left: -500px;
+    margin-top: -70px;
+
 }
 .page3-box {
-    margin-left: -150px;
-    width: 299px;
-    height: 203px;
-    margin-top: -40px;
+	width: 1000px;
+    height: 115px;
+    line-height: 115px;
+    margin-left: -500px;
+    margin-top: -100px;
 }
 .page4-box {
-    width: 398px;
-    height: 322px;
-    background-image: url(../../images/a6.png);
-    background-size: 100% 100%;
-    margin-left: -199px;
-    margin-top: -120px;
+	width: 1200px;
+    height: 115px;
+    line-height: 115px;
+    margin-left: -600px;
+    margin-top: -70px;
 }
-.page4-box img{
-    float: right;
-    -webkit-animation:scaleIn .6s ease 2.4s both;
-    -moz-animation:scaleIn .6s ease 2.4s both;
-    -ms-animation:scaleIn .6s ease 2.4s both;
-    animation:scaleIn .6s ease 2.4s both;
-}
-.scTop,.scBottom {
-    position: absolute;
-    left: 0;
-    background: #2f2f2f url(../../images/a15.png) repeat-x 0 0;
-    width: 100%;
-    height: 82px;
-}
-.scTop {
-    top: 70px;
-    -webkit-animation: bgL 20s linear 0s infinite alternate both;
-    -moz-animation:bgL 20s linear 0s infinite alternate both;
-    -ms-animation:bgL 20s linear 0s infinite alternate both;
-    animation:bgL 20s linear 0s infinite alternate both;
-}
-.scBottom {
-    bottom: 70px;
-    -webkit-animation: bgR 20s linear 0s infinite alternate both;
-    -moz-animation:bgR 20s linear 0s infinite alternate both;
-    -ms-animation:bgR 20s linear 0s infinite alternate both;
-    animation:bgR 20s linear 0s infinite alternate both;
-}
+
 .section1 .contain {
 	display: block !important;
 }
@@ -362,9 +329,7 @@ body {
 	.page1 p {
 		font-size: 14px;
 	}
-	#next,#prev {
-		display: none;
-	}
+
 	.page1-box {
 		margin-left: -91px;
 		margin-top: -90px;
@@ -560,67 +525,4 @@ body {
         -ms-transform: scale(1);
     }
 }
-@keyframes bgL {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 2000px 0;
-    }
-}
-@-webkit-keyframes bgL {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 2000px 0;
-    }
-}
-@-moz-keyframes bgL {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 2000px 0;
-    }
-}
-@-ms-keyframes bgL {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 2000px 0;
-    }
-}
-@keyframes bgR {
-    0% {
-        background-position: 2000px 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-@-webkit-keyframes bgR {
-    0% {
-        background-position: 2000px 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-@-moz-keyframes bgR {
-    0% {
-        background-position: 2000px 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-@-ms-keyframes bgR {
-    0% {
-        background-position: 2000px 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
+
