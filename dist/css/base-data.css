@@ -28,6 +28,9 @@
 #base-body .table {
   display: none;
 }
+.table td{
+	white-space: nowrap; 
+}
 .addDish {
   float: right;
 }
