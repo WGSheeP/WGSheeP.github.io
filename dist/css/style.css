@@ -5,6 +5,8 @@
 body {
   background: url("../../images/star.jpg");
   overflow: hidden;
+  font-family: "verdana","ms song","Arial","Helvetica", "sans-serif";
+  
 }
 .app {
   position: relative;
@@ -27,8 +29,7 @@ body {
   color: white;
   display: block;
   text-align: center;
-  font-family: "微软雅黑";
-  font-size: 12px;
+  font-style: normal;
 }
 .app span i {
   display: block;
@@ -36,6 +37,7 @@ body {
   height: 70px;
   line-height: 70px;
   border-radius: 10px;
+  
 }
 .order i {
   background: url("../../images/order.png");
@@ -45,6 +47,9 @@ body {
 }
 .weather i {
   background: url("../../images/weather.png");	
+}
+.clock i{
+  background: url("../../images/clock.png");		
 }
 
 #rightMenu {

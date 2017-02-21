@@ -162,6 +162,7 @@ body {
     line-height: 70px;
     transition:all .4s ease;
     color: #333;
+
 }
 .naV h1 a:hover {
     text-shadow:1px 1px 3px #000;
@@ -174,6 +175,7 @@ body {
     position: absolute;
     left: 80px;
     top: 0;
+   
 }
 .naV h1 p {
     display: none;
