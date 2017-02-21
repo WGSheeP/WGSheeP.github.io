@@ -21,6 +21,8 @@
 				popBox($('.order-box'));	
 				winOperate ($('.order-box'));
 				drag(document.querySelector('.order-header-nav'), document.querySelector('.order-box'));				
+			}else if(index==3){
+				$
 			}
 
 
@@ -132,12 +134,4 @@
 		}
 		
 	}
-	//右键新建
-	//star盒子
-	function star() {
-		setInterval(function() {
-
-		}, 3000)
-
-	}
-//}
+//时钟
