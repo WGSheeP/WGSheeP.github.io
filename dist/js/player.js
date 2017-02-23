@@ -39,7 +39,7 @@ window.onload=function()
 //      	alert(1)
             if ( $(this).val() ) {
                 $.ajax({
-                    url: '//works.miaov.com/music/index.php',
+                    url: 'http://works.miaov.com/music/index.php',
                     data: {
                         q: $(this).val(),
                         start:0,
@@ -58,12 +58,12 @@ window.onload=function()
             }
         });
 
-        $('.search-input').delegate('li', 'click', function() {
+        $('.search-list').delegate('li', 'click', function() {
 
             $(play).attr('src', $(this).data('songUrl'));
 
             $.ajax({
-                url: '//works.miaov.com/music/index.php',
+                url: 'http://works.miaov.com/music/index.php',
                 data: {
                     action: 'getlyric',
                     sid: $(this).data('sid'),
