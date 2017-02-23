@@ -39,7 +39,7 @@ window.onload=function()
 //      	alert(1)
             if ( $(this).val() ) {
                 $.ajax({
-                    url: 'http://works.miaov.com/music/index.php',
+                    url: 'works.miaov.com/music/index.php',
                     data: {
                         q: $(this).val(),
                         start:0,
@@ -63,7 +63,7 @@ window.onload=function()
             $(play).attr('src', $(this).data('songUrl'));
 
             $.ajax({
-                url: 'http://works.miaov.com/music/index.php',
+                url: 'works.miaov.com/music/index.php',
                 data: {
                     action: 'getlyric',
                     sid: $(this).data('sid'),
