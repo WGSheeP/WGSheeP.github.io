@@ -35,14 +35,15 @@ window.onload=function()
 		
 	}
 	//根据输入关键字，调用在线接口搜索音乐
-	       $('.search-input').on('input', function() {
+        $('.search-input').on('input', function() {
 //      	alert(1)
             if ( $(this).val() ) {
                 $.ajax({
-                    url: 'https://works.miaov.com/music/index.php',
+                    url: 'http://works.miaov.com/music/index.php',
                     data: {
-                        action: 'search',
-                        word: $(this).val()
+                        q: $(this).val(),
+                        start:0,
+                        count:8
                     },
                     success: function(rs) {
                         if (!rs.code) {
@@ -56,14 +57,13 @@ window.onload=function()
                 })
             }
         });
-        console.log(1)
-        $('.search-list').delegate('li', 'click', function() {
-        	alert(2)
+
+        $('.search-input').delegate('li', 'click', function() {
 
             $(play).attr('src', $(this).data('songUrl'));
 
             $.ajax({
-                url: 'https://works.miaov.com/music/index.php',
+                url: 'http://works.miaov.com/music/index.php',
                 data: {
                     action: 'getlyric',
                     sid: $(this).data('sid'),
