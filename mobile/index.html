@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta name="format-detection" content="telephone=no">
+        <title>疯狂旅行记</title>
+        <link rel="stylesheet" type="text/css" href="css/tool/swiper.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="css/bundle.css" />
+        <link rel="stylesheet" type="text/css" href="css/tool/animate.css" />
+        <script type="text/javascript" src="js/tool/jquery.min.js"></script>
+        <script type="text/javascript" src="js/tool/imagesLoader.min.js"></script>
+        <script type="text/javascript" src="test/debuggap.js"></script>
+        <script type="text/javascript">
+            (function(doc, win) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if (clientWidth >= 640) {
+                            docEl.style.fontSize = '100px';
+                        } else {
+                            docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                        }
+                    };
+
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            })(document, window);
+        </script>
+    </head>
+    
+    <body>
+        <!--首屏载入开始-->
+        <div class="swiper-slide loadPage">
+            <div class="loadingtxt"></div>
+            <div class="progress">
+                <div class="proinner">
+                    <div class="line">
+                        <div class="fj"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--首屏载入结束-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--第一屏开始-->
+                <div class="swiper-slide swiper-no-swiping section1">
+                    <div class="p1-1 easelay" data-easein="bounceInDown" data-easeinspeed="1"
+                    data-start="0"></div>
+                    <div class="fj1 fjdong0 infinite animated2"></div>
+                    <div class="p1-4-btn easelay" data-easein="bounceInUp" data-easeinspeed="1"
+                    data-start="0" data-easing="pulse" data-easeingspeed="1" data-easeingcount="infinite"></div>
+                </div>
+                <!--第二屏开始-->
+                <div class="swiper-slide swiper-no-swiping section2">
+                    <div id="jiaodu1"></div>
+                    <div id="jiaodu2"></div>
+                    <div id="jiaodu3"></div>
+                    <div class="p2-1 fan180">
+                        <div class="p2-inner">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="p2-2">
+                        <div class="p2-2inner">
+                            <div class="xuehua"></div>
+                        </div>
+                    </div>
+                    <div class="fantip"></div>
+                    <div class="nextping fadeOutUp animated infinite fandnext" style="display: none;"></div>
+                </div>
+                <!--第三屏开始-->
+                <div class="swiper-slide section3">
+                    <div class="txt easelay" data-easein="fadeIn" data-easeinspeed="3" data-start="0"></div>
+                    <div class="txt2 easelay" data-easein="fadeIn" data-easeinspeed="3"
+                    data-start="0" data-easing="fdsx" data-easeingspeed="2" data-easeingcount="1"></div>
+                    <div class="line1 easelay" data-easein="huaru1" data-easeinspeed="1"
+                    data-start="1"></div>
+                    <div class="line2 easelay" data-easein="huaru2" data-easeinspeed="1"
+                    data-start="1"></div>
+                    <div class="line3 easelay" data-easein="huaru3" data-easeinspeed="1"
+                    data-start="1"></div>
+                    <div class="line4 easelay" data-easein="huaru4" data-easeinspeed="1"
+                    data-start="1"></div>
+                    <div class="xian easelay" data-easein="xianla" data-easeinspeed="1"
+                    data-start="2"></div>
+                    <div class="liuxing liuxing1 easelay" data-easein="xuehuajing" data-easeinspeed="3"
+                    data-start="0" data-easing="lxhuadong1" data-easeingspeed="2" data-easeingcount="infinite"></div>
+                    <div class="liuxing liuxing2 easelay" data-easein="xuehuajing" data-easeinspeed="3.5"
+                    data-start="0" data-easing="lxhuadong1" data-easeingspeed="2" data-easeingcount="infinite"></div>
+                    <div class="nextping fadeOutUp animated infinite"></div>
+                </div>
+                <!--第四屏开始-->
+                <div class="swiper-slide section4">
+                    <div class="zi zi1 easelay" data-easein="zijing1" data-easeinspeed="3"
+                    data-start="0" data-easing="zidong1" data-easeingspeed="2" data-easeingcount="1"></div>
+                    <div class="zi zi2 easelay" data-easein="zijing2" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong2" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="zi zi3 easelay" data-easein="zijing3" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong3" data-easeingspeed="2" data-easeingcount="1"></div>
+                    <div class="zi zi4 easelay" data-easein="zijing4" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong4" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="zi zi5 easelay" data-easein="zijing5" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong5" data-easeingspeed="4" data-easeingcount="1"></div>
+                    <div class="zi zi6 easelay" data-easein="zijing6" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong6" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="zi zi7 easelay" data-easein="zijing7" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong7" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="zi zi8 easelay" data-easein="zijing8" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong8" data-easeingspeed="4" data-easeingcount="1"></div>
+                    <div class="zi zi9 easelay" data-easein="zijing9" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong9" data-easeingspeed="2" data-easeingcount="1"></div>
+                    <div class="zi zi10 easelay" data-easein="zijing10" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong10" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="zi zi11 easelay" data-easein="zijing11" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong11" data-easeingspeed="4" data-easeingcount="1"></div>
+                    <div class="zi zi12 easelay" data-easein="zijing12" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong12" data-easeingspeed="2" data-easeingcount="1"></div>
+                    <div class="zi zi13 easelay" data-easein="zijing13" data-easeinspeed="3.5"
+                    data-start="0" data-easing="zidong13" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="txtword easelay" data-easein="kuangjing" data-easeinspeed="3"
+                    data-start="0" data-easing="feikuang" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="line1 easelay" data-easein="hualine1" data-easeinspeed="3"
+                    data-start="1" data-easing="feiline1" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="line2 easelay" data-easein="hualine2" data-easeinspeed="3"
+                    data-start="1" data-easing="feiline2" data-easeingspeed="3" data-easeingcount="1"></div>
+                    <div class="hailang1 fadeInRight  animated3 infinite"></div>
+                    <div class="hailang2 fadeInUp  animated3 infinite"></div>
+                    <div class="nextping fadeOutUp animated infinite" style="display: none;"></div>
+                </div>
+                <!--第五屏开始-->
+                <div class="swiper-slide swiper-no-swiping section5">
+                    <div class="txt1 easelay" data-easein="bounceInDown" data-easeinspeed="1"
+                    data-start="0"></div>
+                    <div class="laohuji">
+                        <div class="lhjinner">
+                            <div class="gunlun1">
+                                <!--疯狂时间BEGIN-->
+                                <div class="fkscroll">
+                                    <div class="fkinner zhuanzhuan animated infinite"></div>
+                                </div>
+                                <div class="fkresult"></div>
+                                <!--疯狂时间END-->
+                            </div>
+                            <div class="gunlun2">
+                                <!--疯狂地点BEGIN-->
+                                <div class="fkscroll">
+                                    <div class="fkinner zhuanzhuan animated infinite"></div>
+                                </div>
+                                <div class="fkresult"></div>
+                                <!--疯狂地点END-->
+                            </div>
+                            <div class="gunlun3">
+                                <!--疯狂事件BEGIN-->
+                                <div class="fkscroll">
+                                    <div class="fkinner zhuanzhuan animated infinite"></div>
+                                </div>
+                                <div class="fkresult"></div>
+                                <!--疯狂事件END-->
+                            </div>
+                            <div class="bar">
+                                <div class="barinner">
+                                    <div class="point"></div>
+                                </div>
+                            </div>
+                            <div class="startzd" title="0"></div>
+                        </div>
+                    </div>
+                    <div class="maketask pulse animated infinite"></div>
+                </div>
+                <!--第六屏开始-->
+                <div class="swiper-slide mytask  swiper-no-swiping section6">
+                    <div class="wxnickname easelay" data-easein="bounceInDown" data-easeinspeed="1"
+                    data-start="0">微信昵称</div>
+                    <div class="task">
+                        <div class="taskinner">
+                            <div class="tx">
+                                <img src="images/tx.png" class="avator" />
+                            </div>
+                            <div class="taskcont">
+                                <ul>
+                                    <li>7:07</li>
+                                    <li>在广场中央</li>
+                                    <li>跟卖艺人聊整天</li>
+                                </ul>
+                            </div>
+                            <div class="rwbg"></div>
+                        </div>
+                    </div>
+                    <div class="txt easelay" data-easein="bounceIn" data-easeinspeed="1" data-start="0"
+                    data-easing="tada" data-easeingspeed="2" data-easeingcount="infinite"></div>
+                    <div class="taskbg"></div>
+                    <div class="morewz"></div>
+                    <div class="jstz-btn easelay" data-easein="bounceInUp" data-easeinspeed="1"
+                    data-start="0" data-easing="pulse" data-easeingspeed="1" data-easeingcount="infinite"></div>
+                </div>
+                <!--第七屏-->
+                <div class="swiper-slide swiper-no-swiping section7">
+                    <div class="txt2"></div>
+                    <div class="fj1 fjdong infinite animated2"></div>
+                    <div class="task">
+                        <div class="taskinner">
+                            <div class="tx">
+                                <img src="images/tx.png" class="avator" />
+                            </div>
+                            <div class="taskcont">
+                                <ul>
+                                    <li>
+                                        <input type="text" name="" id="task-name" placeholder="姓名">
+                                    </li>
+                                    <li>
+                                        <input type="text" name="" id="task-tel" placeholder="电话">
+                                    </li>
+                                    <li>
+                                        <input type="text" name="" id="task-id" placeholder="身份证号">
+                                    </li>
+                                </ul>
+                                <div class="logo"></div>
+                            </div>
+                            <div class="rwbg"></div>
+                        </div>
+                    </div>
+                    <div class="taskbg"></div>
+                    <div class="submitbm-btn easelay" data-easein="bounceInUp" data-easeinspeed="1"
+                    data-start="0" data-easing="tada" data-easeingspeed="1" data-easeingcount="infinite"></div>
+                    <div class="sharefriend-btn easelay" data-easein="bounceInUp" data-easeinspeed="1"
+                    data-start="0" data-easing="tada" data-easeingspeed="1" data-easeingcount="infinite"></div>
+                    <!--报名成功BEGIN-->
+                    <div class="pop bmsuccess">
+                        <div class="poptxt">
+                            <div class="close"></div>
+                            <div class="fj"></div>
+                        </div>
+                    </div>
+                    <!--报名成功END-->
+                    <!--分享BEGIN-->
+                    <div class="pop sharelay">
+                        <div class="poptxt">
+                            <div class="line"></div>
+                            <div class="fj2 animated frifj infinite"></div>
+                        </div>
+                    </div>
+                    <!--分享END-->
+                </div>
+                <!--第八屏-->
+                <div class="swiper-slide mytask swiper-no-swiping section8">
+                    <div class="wxnickname easelay" data-easein="bounceInDown" data-easeinspeed="1"
+                    data-start="0">微信昵称</div>
+                    <div class="task">
+                        <div class="taskinner">
+                            <div class="tx">
+                                <img src="images/tx.png" class="avator" />
+                            </div>
+                            <div class="taskcont">
+                                <ul>
+                                    <li>7:07</li>
+                                    <li>在广场中央</li>
+                                    <li>跟卖艺人聊整天</li>
+                                </ul>
+                            </div>
+                            <div class="rwbg"></div>
+                        </div>
+                    </div>
+                    <div class="txt easelay" data-easein="bounceIn" data-easeinspeed="1" data-start="0"
+                    data-easing="tada" data-easeingspeed="2" data-easeingcount="infinite"></div>
+                    <div class="taskbg"></div>
+                    <div class="wytz-btn pulse animated infinite"></div>
+                    <div class="replay-btn pulse animated infinite"></div>
+                    <div class="jstz-btn pulse animated infinite"></div>
+                    <div class="morewz"></div>
+                    <!--分享BEGIN-->
+                    <div class="pop sharelay">
+                        <div class="poptxt">
+                            <div class="line"></div>
+                            <div class="fj2 animated frifj infinite"></div>
+                        </div>
+                    </div>
+                    <!--分享END-->
+                </div>
+            </div>
+        </div>
+        <!--旋屏提示-->
+        <!--<div id="orientLayer" class="mod-orient-layer">
+	        <div class="mod-orient-layer__content">
+	            <i class="icon mod-orient-layer__icon-orient"></i>
+	            <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+	        </div>
+	    </div>        -->
+        <!--音乐开始-->
+        <div class="musicPic rotate">
+            <audio class="audio" src="music/music4.mp3" autoplay preload="preload"
+            loop="loop">此标签不支持您的浏览器</audio>
+        </div>
+        <!--弹出层-->
+        <div class="pop bmtip">
+            <div class="poptxt">
+                <div class="close"></div>
+                <div class="fj"></div>
+                <div class="txt"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/tool/swiper.jquery.min.js"></script>
+        <script type="text/javascript" src="js/js.js"></script>
+        <!--首屏 -->
+        <script type="text/javascript">
+            var _w = $(window).width();
+            var _h = $(window).height();
+
+            $('.loadPage').css({
+                'width': _w + 'px',
+                'height': _h + 'px'
+            })
+             $('.swiper-container').css({
+                'width': _w + 'px',
+                'height': _h + 'px'
+            })
+             console.log(window.navigator)
+            /*图片预加载*/
+            var loader = new ImagesLoader();
+            loader.loadImages(['fkdd.png', 'fksj.png', 'fktime.png', 'hailang1.png', 'hailang2.png', 'laoding-1.png', 'laoding-fj.png', 'liuxing.png', 'liuxing1.png', 'liuxing2.png', 'musicoff.png', 'musicon.png', 'nextcur.png', 'cwhy.png', 'p0.jpg', 'p1-fj-0.png', 'p1-fj-1.png', 'p1-fj-2.png', 'p1-fj-3.png', 'p1.jpg', 'p1-1.png', 'p1-2.png', 'p1-3.png', 'p1-4.png', 'p1-5.png', 'p2.jpg', 'p2-0.jpg', 'p2-1.png', 'p2-1-0.png', 'p2-1-1.png', 'p2-2.png', 'p2-3.png', 'p3.jpg', 'p3-0.jpg', 'p3-1.png', 'p3-1-1.png', 'p3-2.png', 'p3-3.png', 'p3-4.png', 'p3-5.png', 'p3-6.png', 'p4.jpg', 'p4-1.png', 'p4-2.png', 'p4-3.png', 'p4-4.png', 'p4-5-1.png', 'p4-5-2.png', 'p4-5-3.png', 'p4-5-4.png', 'p4-5-5.png', 'p4-5-6.png', 'p4-5-7.png', 'p4-5-8.png', 'p4-5-9.png', 'p4-5-10.png', 'p4-5-11.png', 'p4-5-12.png', 'p4-5-13.png', 'p5.jpg', 'p5-1.png', 'p5-2.png', 'p5-3.png', 'p5-4.png', 'p5-5-0.png', 'p5-5-1.png', 'p5-5-2.png', 'p5-5-3.png', 'p5-5-4.png', 'p5-6-0.png', 'p5-6-1.png', 'p5-6-2.png', 'p5-6-3.png', 'p5-6-4.png', 'p5-7-0.png', 'p5-7-1.png', 'p5-7-2.png', 'p5-7-3.png', 'p5-7-4.png', 'p5-8.png', 'p5-9.png', 'p5-10.png', 'p5-11.png', 'p5-12.png', 'p6.jpg', 'p6-0.jpg', 'p6-1.png', 'p6-2.png', 'p6-3.png', 'p6-4.png', 'p6-5.png', 'p6-6.png', 'p7-1.png', 'p7-2.png', 'p7-3.png', 'p7-4.png', 'p7-5.png', 'p7-5-0.png', 'p7-5-1.png', 'p7-5-2.png', 'p7-6.png', 'p7-7.png', 'p7-8.png', 'p7-9.png', 'p7-10.png', 'p7-11.png', 'p7-12.png', 'p7-13.png', 'p7-13-1.png', 'p7-14.png', 'p7-15.png', 'p7-16.png', 'pixels.png', 'replayBtn.png', 'wytzBtn.png', 'thumb.jpg'], 'images/');
+
+            loader.complete(function() {
+                $('.easelay').hide(); //初始化，隐藏所有的动画
+                setTimeout(function() {
+                    $('.loadPage').hide();
+
+                    //启动首屏动画
+                    easeAct();
+                    music();
+
+                }, 100);
+            });
+            loader.process(function() {
+                //console.log(this.processNum)
+                $('.loadPage .line').css({
+                    'width': this.processNum + '%'
+                })
+            });
+            loader.start();
+            var tiaoPingFlag = null;
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'vertical',
+                speed: 300,
+                onSlideChangeStart: function(swiper) {
+                    $('.easelay').hide();
+                },
+                onSlideChangeEnd: function() {
+                    console.log(mySwiper)
+                    if (mySwiper != undefined) {
+                        curr = mySwiper.activeIndex;
+                        if (curr == 3) {
+                            tiaoPingFlag = setTimeout(function() {
+                                mySwiper.slideTo(4, 0, true);
+                            }, 7000)
+                        }
+
+                        if (curr == 2 || curr == 4) {
+                            clearTimeout(tiaoPingFlag)
+                        }
+
+                    }
+                    easeAct();
+                }
+
+            })
+             var orientFlag = false;
+            var oneshow = true; //仅执行一次
+
+            $('.p1-4-btn').click(function() {
+                mySwiper.slideTo(1, 0, true);
+
+                window.addEventListener("deviceorientation", function(event) {
+                    // 处理event.alpha、event.beta及event.gamma
+
+                    //$('#jiaodu1').html(event.alpha)
+                    //$('#jiaodu2').html(event.beta)
+                    //$('#jiaodu3').html(event.gamma)
+
+                    if (event.beta < 0) {
+                        $('.fantip').hide();
+                        orientFlag = true;
+                    } else {
+                        if (orientFlag) {
+                            if (oneshow) {
+                                setTimeout(function() {
+                                    orientationChange()
+                                }, 1000)
+                            }
+                        }
+                    }
+
+                }, true);
+            })
+
+            function orientationChange() {
+                oneshow = false;
+                $('.section2').addClass('section2-1');
+                $('.section2 .p2-1').addClass('animated');
+                $('.section2 .p2-1').addClass('side180');
+                setTimeout(function() {
+                    $('.section2 .p2-1').removeClass('animated');
+                    $('.section2 .p2-1').removeClass('side180');
+                    $('.section2 .p2-1').removeClass('fan180');
+
+                    $('.section2 .p2-1').addClass('p2zheng');
+
+                    $('.section2 .p2-1 .line').addClass('animated3');
+                    $('.section2 .p2-1 .line').addClass('lineDown');
+
+                    $('.xuehua').addClass('xuehuadong');
+                    $('.xuehua').addClass('animated3');
+                    $('.xuehua').addClass('infinite');
+
+                    $('.fandnext').show();
+
+                    $('.section2').removeClass('swiper-no-swiping');
+                    orientFlag = false;
+                }, 1000);
+
+
+            };
+            //第五屏
+            $('.maketask').click(function() {
+                var ismasktask = $('.startzd').attr('title');
+                if (ismasktask == '1') {
+                    mySwiper.slideTo(5, 0, true);
+
+                } else {
+                    $('.bmtip .txt').html('点击[开始转动]，生成任务单')
+                    $('.bmtip').show();
+                }
+            })
+            //第六屏
+            $('.jstz-btn').click(function() {
+                mySwiper.slideTo(6, 0, true);
+                console.log("切换")
+            })
+        </script>
+    </body>
+
+</html>
