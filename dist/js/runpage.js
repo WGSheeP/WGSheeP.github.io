@@ -47,7 +47,7 @@
 					},
 					opacity: [0, 1] // [opacityfrom, opacityto]
 				},
-				mode: 'touch,wheel,click', // mode of fullpage
+				mode: 'touch,click', // mode of fullpage
 				easing: [0, .93, .39, .98],
 				callback: function(index, thisPage) { // callback when pageChange
 
