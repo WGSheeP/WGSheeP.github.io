@@ -14,8 +14,8 @@ window.onload=function()
 	var barValue=playBox.getElementsByClassName("jp-volume-bar-value")[0];
 	var volumeMax=playBox.getElementsByClassName("jp-volume-max")[0];
 	var mute=playBox.getElementsByClassName("jp-mute")[0];
-	musicPlayer.addEventListener("click",showIn,false);
-	closed.addEventListener("click",showOut,false);
+//	musicPlayer.addEventListener("click",showIn,false);
+//	closed.addEventListener("click",showOut,false);
 	function showIn()
 	{
 		playBox.style.top="50%";
